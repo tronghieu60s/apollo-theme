@@ -7,12 +7,14 @@
   background-size: cover;
   background-position: center;
   position: relative; }
+  .ap-header .navbar-toggler:focus {
+    outline: none; }
   .ap-header .nav-item {
     padding: 5px 0;
-    margin: 0 7px; }
+    margin: 0 15px; }
     .ap-header .nav-item .nav-link {
       color: #fff;
-      font-size: 1em;
+      font-size: 20px;
       font-style: normal;
       font-weight: 600;
       letter-spacing: 0.15px; }
@@ -34,8 +36,8 @@
       left: 100%; }
     .ap-header .nav-item.dropdown .dropdown-item {
       font-weight: 500;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 14px;
+      padding-bottom: 14px;
       border-radius: 10px; }
       .ap-header .nav-item.dropdown .dropdown-item:hover {
         color: #2576b9;
@@ -49,8 +51,6 @@
       border-top-color: transparent;
       box-shadow: 0 8px 16px #00000026;
       margin: 0; }
-  .ap-header .navbar-toggler:focus {
-    outline: none; }
   .ap-header-container {
     width: 90%;
     margin: auto;
@@ -62,10 +62,10 @@
     align-items: center;
     background-color: #ffd95c;
     border-radius: 100px;
+    font-size: 20px;
     font-weight: 700;
     color: #2576b9;
     display: flex;
-    font-size: 0.9em;
     padding: 12px 24px;
     text-transform: uppercase; }
     .ap-header-btn-login:hover {
@@ -80,6 +80,8 @@
     background-size: cover;
     position: absolute;
     bottom: 0; }
+  .ap-header-dropdown-special {
+    color: #e94286; }
 
 .ap-feedback {
   width: 100%;
@@ -87,8 +89,8 @@
   font-family: "Brauer NeueVN", sans-serif;
   background-color: #bcdaf2; }
   .ap-feedback-box {
-    padding: 72px 0;
     position: relative;
+    padding-top: 72px;
     margin: 0 auto; }
   .ap-feedback-title {
     width: 983px;
@@ -101,36 +103,37 @@
     margin: 0 auto; }
   .ap-feedback-icon-meteor {
     position: absolute;
-    bottom: 15%;
-    left: 100px; }
+    bottom: -15%;
+    left: 10%; }
   .ap-feedback-icon-double-star {
     position: absolute;
-    bottom: 15%;
-    right: 100px; }
-  .ap-feedback-slide {
+    bottom: -15%;
+    right: 10%; }
+  .ap-feedback-slick {
     width: 912px;
     font-family: "Montserrat", sans-serif;
-    margin: 0 auto;
+    margin: 20px auto 0 auto; }
+  .ap-feedback-slide {
     position: relative; }
     .ap-feedback-slide .slick-list {
-      padding-top: 50px; }
+      padding: 32px 0; }
     .ap-feedback-slide-item {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
-      align-items: center;
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); }
+      align-items: center; }
       .ap-feedback-slide-item-quote {
         position: absolute;
-        top: -50px;
+        top: -32px;
         left: 44.5px; }
       .ap-feedback-slide-item-content {
         font-size: 18px;
         line-height: 28px;
         text-align: center;
-        padding: 72px 32px; }
+        padding: 72px 32px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); }
     .ap-feedback-slide-arrow {
       position: absolute;
       top: 50%;
@@ -141,5 +144,48 @@
         left: -55.5px; }
       .ap-feedback-slide-arrow-next {
         right: -55.5px; }
+  .ap-feedback-nav {
+    margin-top: 16px; }
+    .ap-feedback-nav .slick-track {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .ap-feedback-nav-item {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+      .slick-current .ap-feedback-nav-item-image {
+        width: 208px;
+        height: 208px;
+        border-width: 8px;
+        border-radius: 50%;
+        border: 6px solid #2576b9; }
+      .slick-current .ap-feedback-nav-item-name {
+        display: block; }
+      .slick-current .ap-feedback-nav-item-local {
+        display: block; }
+      .ap-feedback-nav-item-image {
+        width: 128px;
+        height: 128px; }
+        .ap-feedback-nav-item-image img {
+          width: 100%;
+          height: auto; }
+      .ap-feedback-nav-item-name {
+        color: #2576b9;
+        font-family: "Brauer NeueVN", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 120%;
+        margin-top: 16px;
+        display: none; }
+      .ap-feedback-nav-item-local {
+        color: #2576b9;
+        font-size: 12px;
+        letter-spacing: 0.25px;
+        line-height: 120%;
+        margin-top: 4px;
+        display: none; }
 
 /*# sourceMappingURL=styles.css.map */
