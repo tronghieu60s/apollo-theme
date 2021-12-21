@@ -89,6 +89,9 @@
       outline: none;
     }
   }
+  &-dropdown-special {
+    color: #e94286;
+  }
   &-wave {
     width: 100%;
     height: 140px;
@@ -98,9 +101,6 @@
     position: absolute;
     bottom: 0;
   }
-  &-dropdown-special {
-    color: #e94286;
-  }
 }
 
 .ap-feedback {
@@ -108,13 +108,14 @@
   height: 904px;
   font-family: "Brauer NeueVN", sans-serif;
   background-color: #bcdaf2;
+  position: relative;
   &-box {
     position: relative;
     padding-top: 72px;
     margin: 0 auto;
   }
   &-title {
-    width: 983px;
+    width: 65%;
     color: #2576b9;
     text-align: center;
     font-size: 48px;
@@ -122,23 +123,29 @@
     line-height: 54px;
     text-transform: uppercase;
     margin: 0 auto;
+    @media screen and (max-width: 768px) {
+      width: 95%;
+    }
   }
   &-icon {
     &-meteor {
       position: absolute;
       bottom: -15%;
-      left: 10%;
+      left: 8%;
     }
     &-double-star {
       position: absolute;
       bottom: -15%;
-      right: 10%;
+      right: 8%;
     }
   }
   &-slick {
-    width: 912px;
+    width: 60%;
     font-family: "Montserrat", sans-serif;
     margin: 20px auto 0 auto;
+    @media screen and (max-width: 768px) {
+      width: 95%;
+    }
   }
   &-slide {
     position: relative;
@@ -219,19 +226,56 @@
         color: #2576b9;
         font-family: "Brauer NeueVN", sans-serif;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 22px;
         line-height: 120%;
         margin-top: 16px;
         display: none;
       }
       &-local {
         color: #2576b9;
-        font-size: 12px;
+        font-size: 15px;
         letter-spacing: 0.25px;
         line-height: 120%;
         margin-top: 4px;
         display: none;
       }
     }
+    &-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      cursor: pointer;
+      &-prev {
+        left: 20px;
+      }
+      &-next {
+        right: 20px;
+      }
+    }
+  }
+}
+
+.ap-journey {
+  width: 100%;
+  height: 1016px;
+  font-family: "Brauer NeueVN", sans-serif;
+  position: relative;
+  &-title {
+    width: 983px;
+    color: #2576b9;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54px;
+    text-transform: uppercase;
+    margin: 48px auto 0 auto;
+  }
+  &-wave {
+    width: 100%;
+    height: 144px;
+    background-image: url(../images/wave-journey.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

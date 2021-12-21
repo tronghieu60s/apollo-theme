@@ -72,6 +72,8 @@
       text-decoration: none; }
     .ap-header-btn-login:focus {
       outline: none; }
+  .ap-header-dropdown-special {
+    color: #e94286; }
   .ap-header-wave {
     width: 100%;
     height: 140px;
@@ -80,20 +82,19 @@
     background-size: cover;
     position: absolute;
     bottom: 0; }
-  .ap-header-dropdown-special {
-    color: #e94286; }
 
 .ap-feedback {
   width: 100%;
   height: 904px;
   font-family: "Brauer NeueVN", sans-serif;
-  background-color: #bcdaf2; }
+  background-color: #bcdaf2;
+  position: relative; }
   .ap-feedback-box {
     position: relative;
     padding-top: 72px;
     margin: 0 auto; }
   .ap-feedback-title {
-    width: 983px;
+    width: 65%;
     color: #2576b9;
     text-align: center;
     font-size: 48px;
@@ -101,18 +102,24 @@
     line-height: 54px;
     text-transform: uppercase;
     margin: 0 auto; }
+    @media screen and (max-width: 768px) {
+      .ap-feedback-title {
+        width: 95%; } }
   .ap-feedback-icon-meteor {
     position: absolute;
     bottom: -15%;
-    left: 10%; }
+    left: 8%; }
   .ap-feedback-icon-double-star {
     position: absolute;
     bottom: -15%;
-    right: 10%; }
+    right: 8%; }
   .ap-feedback-slick {
-    width: 912px;
+    width: 60%;
     font-family: "Montserrat", sans-serif;
     margin: 20px auto 0 auto; }
+    @media screen and (max-width: 768px) {
+      .ap-feedback-slick {
+        width: 95%; } }
   .ap-feedback-slide {
     position: relative; }
     .ap-feedback-slide .slick-list {
@@ -176,16 +183,47 @@
         color: #2576b9;
         font-family: "Brauer NeueVN", sans-serif;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 22px;
         line-height: 120%;
         margin-top: 16px;
         display: none; }
       .ap-feedback-nav-item-local {
         color: #2576b9;
-        font-size: 12px;
+        font-size: 15px;
         letter-spacing: 0.25px;
         line-height: 120%;
         margin-top: 4px;
         display: none; }
+    .ap-feedback-nav-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      cursor: pointer; }
+      .ap-feedback-nav-arrow-prev {
+        left: 20px; }
+      .ap-feedback-nav-arrow-next {
+        right: 20px; }
+
+.ap-journey {
+  width: 100%;
+  height: 1016px;
+  font-family: "Brauer NeueVN", sans-serif;
+  position: relative; }
+  .ap-journey-title {
+    width: 983px;
+    color: #2576b9;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54px;
+    text-transform: uppercase;
+    margin: 48px auto 0 auto; }
+  .ap-journey-wave {
+    width: 100%;
+    height: 144px;
+    background-image: url(../images/wave-journey.svg);
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 /*# sourceMappingURL=styles.css.map */
