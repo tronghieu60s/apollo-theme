@@ -1,13 +1,15 @@
 .ap-header {
   width: 100%;
-  min-height: 100vh;
-  font-family: "Poppins", sans-serif;
+  min-height: 964px;
+  font-family: "Brauer NeueVN", sans-serif;
   background-image: url(../images/banner-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: absolute;
+  position: relative;
   .nav-item {
+    padding: 5px 0;
+    margin: 0 7px;
     .nav-link {
       color: #fff;
       font-size: 1em;
@@ -22,27 +24,20 @@
       background-color: #fff;
       border-radius: 8px 8px 0px 0px;
       color: #263238;
-      line-height: 20.8px;
-      a.nav-link {
-        color: #2576b9;
-      }
-    }
-    &.dropdown {
-      .nav-link:hover ~ div.dropdown-menu,
+      .dropdown-menu,
       .dropdown-menu:hover,
       .dropdown-submenu:hover ul.dropdown-menu {
         opacity: 1 !important;
         visibility: visible !important;
         display: block !important;
       }
+      a.nav-link {
+        color: #2576b9;
+      }
+    }
+    &.dropdown {
       .dropdown-submenu:hover ul.dropdown-menu {
         left: 100%;
-      }
-      .dropdown-menu {
-        padding: 0;
-        border-radius: 10px;
-        border-top-left-radius: 0;
-        box-shadow: 0 8px 16px #00000026;
       }
       .dropdown-item {
         font-weight: 500;
@@ -54,12 +49,28 @@
           background-color: #e3f0f9;
         }
       }
+      .dropdown-menu {
+        padding: 0;
+        border-width: 0;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        border-top-width: 3px;
+        border-top-color: transparent;
+        box-shadow: 0 8px 16px #00000026;
+        margin: 0;
+      }
     }
   }
+  .navbar-toggler:focus {
+    outline: none;
+  }
   &-container {
-    width: calc(100vw - 300px);
+    width: 90%;
     margin: auto;
     padding: 20px 0;
+    @media screen and (max-width: 991px) {
+      width: 90%;
+    }
   }
   &-btn-login {
     align-items: center;
@@ -86,5 +97,39 @@
     background-size: cover;
     position: absolute;
     bottom: 0;
+  }
+}
+
+.ap-feedback {
+  width: 100%;
+  height: 904px;
+  font-family: "Brauer NeueVN", sans-serif;
+  background-color: #bcdaf2;
+  &-box {
+    padding: 72px 0;
+    position: relative;
+    margin: 0 auto;
+  }
+  &-title {
+    width: 983px;
+    color: #2576b9;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54px;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+  &-icon {
+    &-meteor {
+      position: absolute;
+      bottom: 15%;
+      left: 100px;
+    }
+    &-double-star {
+      position: absolute;
+      bottom: 15%;
+      right: 100px;
+    }
   }
 }
