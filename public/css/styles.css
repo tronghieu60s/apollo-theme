@@ -85,7 +85,6 @@
 
 .ap-feedback {
   width: 100%;
-  height: 904px;
   font-family: "Brauer NeueVN", sans-serif;
   background-color: #bcdaf2;
   position: relative; }
@@ -116,6 +115,7 @@
   .ap-feedback-slick {
     width: 60%;
     font-family: "Montserrat", sans-serif;
+    padding-bottom: 72px;
     margin: 20px auto 0 auto; }
     @media screen and (max-width: 768px) {
       .ap-feedback-slick {
@@ -207,11 +207,10 @@
 
 .ap-journey {
   width: 100%;
-  height: 1016px;
   font-family: "Brauer NeueVN", sans-serif;
   position: relative; }
   .ap-journey-title {
-    width: 983px;
+    width: 65%;
     color: #2576b9;
     text-align: center;
     font-size: 48px;
@@ -219,11 +218,127 @@
     line-height: 54px;
     text-transform: uppercase;
     margin: 48px auto 0 auto; }
+    @media screen and (max-width: 768px) {
+      .ap-journey-title {
+        width: 95%; } }
+  .ap-journey-tabs {
+    width: 75%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 48px auto 0 auto;
+    overflow: scroll; }
+    @media screen and (max-width: 768px) {
+      .ap-journey-tabs {
+        width: 95%; } }
+    .ap-journey-tabs::-webkit-scrollbar {
+      width: 0px;
+      height: 0px; }
+    .ap-journey-tabs-item {
+      color: #2576b9;
+      background-color: #fff;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 10px 32px;
+      border: 1px solid #90a4ae;
+      border-radius: 40px;
+      white-space: nowrap;
+      z-index: 10;
+      position: relative;
+      cursor: pointer; }
+      @media screen and (max-width: 1200px) {
+        .ap-journey-tabs-item {
+          margin-right: 20px; } }
+      .ap-journey-tabs-item:after {
+        content: "";
+        height: 1px;
+        background-color: #90a4ae;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        left: 100%; }
+      .ap-journey-tabs-item:last-child:after {
+        display: none; }
+      .ap-journey-tabs-item-active {
+        color: #ffd95c;
+        background-color: #2576b9; }
+  .ap-journey-content {
+    width: 80%;
+    margin: 40px auto 0 auto; }
+    @media screen and (max-width: 768px) {
+      .ap-journey-content {
+        width: 95%; } }
+    .ap-journey-content-tabs {
+      width: 80%;
+      margin: auto; }
+      @media screen and (max-width: 992px) {
+        .ap-journey-content-tabs {
+          width: 95%; } }
+      .ap-journey-content-tabs-title {
+        font-size: 48px;
+        font-weight: 700;
+        color: #fff;
+        text-shadow: #eb9cc3 9px 0 0, #eb9cc3 8.9445px 0.997944px 0, #eb9cc3 8.77869px 1.98358px 0, #eb9cc3 8.50461px 2.94475px 0, #eb9cc3 8.12565px 3.86961px 0, #eb9cc3 7.64647px 4.74674px 0, #eb9cc3 7.07299px 5.56533px 0, #eb9cc3 6.41227px 6.31528px 0, #eb9cc3 5.67248px 6.98735px 0, #eb9cc3 4.86272px 7.57324px 0, #eb9cc3 3.99299px 8.06573px 0, #eb9cc3 3.07402px 8.45875px 0, #eb9cc3 2.11714px 8.74744px 0, #eb9cc3 1.13414px 8.92825px 0, #eb9cc3 0.137162px 8.99895px 0, #eb9cc3 -0.861512px 8.95867px 0, #eb9cc3 -1.84956px 8.8079px 0, #eb9cc3 -2.8148px 8.5485px 0, #eb9cc3 -3.74532px 8.18368px 0, #eb9cc3 -4.62965px 7.71792px 0, #eb9cc3 -5.45689px 7.15698px 0, #eb9cc3 -6.21682px 6.50777px 0, #eb9cc3 -6.90009px 5.77831px 0, #eb9cc3 -7.49825px 4.97757px 0, #eb9cc3 -8.00394px 4.11545px 0, #eb9cc3 -8.41092px 3.20258px 0, #eb9cc3 -8.71416px 2.2502px 0, #eb9cc3 -8.90993px 1.27008px 0, #eb9cc3 -8.99582px 0.274291px 0, #eb9cc3 -8.97076px -0.72488px 0, #eb9cc3 -8.83507px -1.71511px 0, #eb9cc3 -8.59041px -2.68419px 0, #eb9cc3 -8.23981px -3.62017px 0, #eb9cc3 -7.78758px -4.51149px 0, #eb9cc3 -7.23931px -5.34718px 0, #eb9cc3 -6.60176px -6.11692px 0, #eb9cc3 -5.88279px -6.81122px 0, #eb9cc3 -5.09127px -7.42152px 0, #eb9cc3 -4.23696px -7.94029px 0, #eb9cc3 -3.33039px -8.36113px 0, #eb9cc3 -2.38275px -8.67885px 0, #eb9cc3 -1.40572px -8.88954px 0, #eb9cc3 -0.411357px -8.99059px 0, #eb9cc3 0.58808px -8.98077px 0, #eb9cc3 1.58026px -8.86018px 0, #eb9cc3 2.55296px -8.63032px 0, #eb9cc3 3.49417px -8.29402px 0, #eb9cc3 4.39229px -7.85543px 0, #eb9cc3 5.23623px -7.31996px 0, #eb9cc3 6.0156px -6.69422px 0, #eb9cc3 6.72078px -5.98591px 0, #eb9cc3 7.34307px -5.20378px 0, #eb9cc3 7.87479px -4.35748px 0, #eb9cc3 8.3094px -3.45743px 0, #eb9cc3 8.64153px -2.51474px 0, #eb9cc3 8.86709px -1.54104px 0, #eb9cc3 8.98328px -0.548328px 0; }
+        @media screen and (max-width: 768px) {
+          .ap-journey-content-tabs-title {
+            font-size: 28px;
+            text-align: center; } }
+      .ap-journey-content-tabs-text {
+        font-family: "Montserrat", sans-serif;
+        line-height: 28px;
+        margin-top: 47px; }
+        @media screen and (max-width: 768px) {
+          .ap-journey-content-tabs-text {
+            text-align: center; } }
+    .ap-journey-content-images {
+      width: 90%;
+      margin: auto;
+      position: relative; }
+      .ap-journey-content-images-image {
+        width: 112%;
+        transform: translateX(-6%); }
+      .ap-journey-content-images-background {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1; }
+      .ap-journey-content-images-bulb {
+        width: 20%;
+        position: absolute;
+        top: 2%;
+        left: 1%; }
+      .ap-journey-content-images-star {
+        width: 15%;
+        position: absolute;
+        top: -7%;
+        left: 59%; }
+      .ap-journey-content-images-trophy {
+        width: 13%;
+        position: absolute;
+        top: 22%;
+        right: 1%; }
   .ap-journey-wave {
     width: 100%;
     height: 144px;
     background-image: url(../images/wave-journey.svg);
     background-repeat: no-repeat;
     background-size: cover; }
+
+.ap-vision {
+  width: 100%;
+  margin-top: 54px; }
+  .ap-vision-wave {
+    width: 90%;
+    height: 307px;
+    background-image: url(../images/line.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto; }
 
 /*# sourceMappingURL=styles.css.map */
