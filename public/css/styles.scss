@@ -388,6 +388,7 @@
       width: 90%;
       margin: auto;
       position: relative;
+      margin-top: 25px;
       &-image {
         width: 112%;
         transform: translateX(-6%);
@@ -429,14 +430,138 @@
 }
 
 .ap-vision {
-  width: 100%;
-  margin-top: 54px;
-  &-wave {
+  font-family: "Brauer NeueVN", sans-serif;
+  margin-top: 110px;
+  &-accordion {
     width: 90%;
-    height: 307px;
+    margin-top: 200px;
+    @media screen and (max-width: 768px) {
+      margin: 60px auto 0 auto;
+    }
+  }
+  &-card {
+    border-width: 0;
+    background-color: transparent;
+    &:after {
+      content: "";
+      width: 100%;
+      border-bottom: 1.5px solid #90a4ae;
+      margin: 12px auto;
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
+    }
+    &:last-child:after {
+      border-width: 0;
+    }
+    &-title {
+      color: #2576b9;
+      font-size: 38px;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+      &.collapsed {
+        color: #90a4ae;
+      }
+    }
+    &-content {
+      position: relative;
+      color: #2576b9;
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 54px;
+      padding: 8px 8px;
+      margin-bottom: 35px;
+      text-shadow: #ffd95c 9px 0 0, #ffd95c 8.9445px 0.997944px 0,
+        #ffd95c 8.77869px 1.98358px 0, #ffd95c 8.50461px 2.94475px 0,
+        #ffd95c 8.12565px 3.86961px 0, #ffd95c 7.64647px 4.74674px 0,
+        #ffd95c 7.07299px 5.56533px 0, #ffd95c 6.41227px 6.31528px 0,
+        #ffd95c 5.67248px 6.98735px 0, #ffd95c 4.86272px 7.57324px 0,
+        #ffd95c 3.99299px 8.06573px 0, #ffd95c 3.07402px 8.45875px 0,
+        #ffd95c 2.11714px 8.74744px 0, #ffd95c 1.13414px 8.92825px 0,
+        #ffd95c 0.137162px 8.99895px 0, #ffd95c -0.861512px 8.95867px 0,
+        #ffd95c -1.84956px 8.8079px 0, #ffd95c -2.8148px 8.5485px 0,
+        #ffd95c -3.74532px 8.18368px 0, #ffd95c -4.62965px 7.71792px 0,
+        #ffd95c -5.45689px 7.15698px 0, #ffd95c -6.21682px 6.50777px 0,
+        #ffd95c -6.90009px 5.77831px 0, #ffd95c -7.49825px 4.97757px 0,
+        #ffd95c -8.00394px 4.11545px 0, #ffd95c -8.41092px 3.20258px 0,
+        #ffd95c -8.71416px 2.2502px 0, #ffd95c -8.90993px 1.27008px 0,
+        #ffd95c -8.99582px 0.274291px 0, #ffd95c -8.97076px -0.72488px 0,
+        #ffd95c -8.83507px -1.71511px 0, #ffd95c -8.59041px -2.68419px 0,
+        #ffd95c -8.23981px -3.62017px 0, #ffd95c -7.78758px -4.51149px 0,
+        #ffd95c -7.23931px -5.34718px 0, #ffd95c -6.60176px -6.11692px 0,
+        #ffd95c -5.88279px -6.81122px 0, #ffd95c -5.09127px -7.42152px 0,
+        #ffd95c -4.23696px -7.94029px 0, #ffd95c -3.33039px -8.36113px 0,
+        #ffd95c -2.38275px -8.67885px 0, #ffd95c -1.40572px -8.88954px 0,
+        #ffd95c -0.411357px -8.99059px 0, #ffd95c 0.58808px -8.98077px 0,
+        #ffd95c 1.58026px -8.86018px 0, #ffd95c 2.55296px -8.63032px 0,
+        #ffd95c 3.49417px -8.29402px 0, #ffd95c 4.39229px -7.85543px 0,
+        #ffd95c 5.23623px -7.31996px 0, #ffd95c 6.0156px -6.69422px 0,
+        #ffd95c 6.72078px -5.98591px 0, #ffd95c 7.34307px -5.20378px 0,
+        #ffd95c 7.87479px -4.35748px 0, #ffd95c 8.3094px -3.45743px 0,
+        #ffd95c 8.64153px -2.51474px 0, #ffd95c 8.86709px -1.54104px 0,
+        #ffd95c 8.98328px -0.548328px 0;
+      &-bg {
+        position: absolute;
+        top: 23px;
+        left: 14px;
+        width: calc(100% - 16px);
+        margin: 0 auto;
+        z-index: -1;
+        color: #ffd95c;
+        text-shadow: #ffd95c 9px 0 0, #ffd95c 8.9445px 0.997944px 0,
+          #ffd95c 8.77869px 1.98358px 0, #ffd95c 8.50461px 2.94475px 0,
+          #ffd95c 8.12565px 3.86961px 0, #ffd95c 7.64647px 4.74674px 0,
+          #ffd95c 7.07299px 5.56533px 0, #ffd95c 6.41227px 6.31528px 0,
+          #ffd95c 5.67248px 6.98735px 0, #ffd95c 4.86272px 7.57324px 0,
+          #ffd95c 3.99299px 8.06573px 0, #ffd95c 3.07402px 8.45875px 0,
+          #ffd95c 2.11714px 8.74744px 0, #ffd95c 1.13414px 8.92825px 0,
+          #ffd95c 0.137162px 8.99895px 0, #ffd95c -0.861512px 8.95867px 0,
+          #ffd95c -1.84956px 8.8079px 0, #ffd95c -2.8148px 8.5485px 0,
+          #ffd95c -3.74532px 8.18368px 0, #ffd95c -4.62965px 7.71792px 0,
+          #ffd95c -5.45689px 7.15698px 0, #ffd95c -6.21682px 6.50777px 0,
+          #ffd95c -6.90009px 5.77831px 0, #ffd95c -7.49825px 4.97757px 0,
+          #ffd95c -8.00394px 4.11545px 0, #ffd95c -8.41092px 3.20258px 0,
+          #ffd95c -8.71416px 2.2502px 0, #ffd95c -8.90993px 1.27008px 0,
+          #ffd95c -8.99582px 0.274291px 0, #ffd95c -8.97076px -0.72488px 0,
+          #ffd95c -8.83507px -1.71511px 0, #ffd95c -8.59041px -2.68419px 0,
+          #ffd95c -8.23981px -3.62017px 0, #ffd95c -7.78758px -4.51149px 0,
+          #ffd95c -7.23931px -5.34718px 0, #ffd95c -6.60176px -6.11692px 0,
+          #ffd95c -5.88279px -6.81122px 0, #ffd95c -5.09127px -7.42152px 0,
+          #ffd95c -4.23696px -7.94029px 0, #ffd95c -3.33039px -8.36113px 0,
+          #ffd95c -2.38275px -8.67885px 0, #ffd95c -1.40572px -8.88954px 0,
+          #ffd95c -0.411357px -8.99059px 0, #ffd95c 0.58808px -8.98077px 0,
+          #ffd95c 1.58026px -8.86018px 0, #ffd95c 2.55296px -8.63032px 0,
+          #ffd95c 3.49417px -8.29402px 0, #ffd95c 4.39229px -7.85543px 0,
+          #ffd95c 5.23623px -7.31996px 0, #ffd95c 6.0156px -6.69422px 0,
+          #ffd95c 6.72078px -5.98591px 0, #ffd95c 7.34307px -5.20378px 0,
+          #ffd95c 7.87479px -4.35748px 0, #ffd95c 8.3094px -3.45743px 0,
+          #ffd95c 8.64153px -2.51474px 0, #ffd95c 8.86709px -1.54104px 0,
+          #ffd95c 8.98328px -0.548328px 0;
+      }
+    }
+  }
+  &-image {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: auto;
+    img {
+      width: 100%;
+    }
+  }
+  &-wave {
+    width: 92%;
+    height: 340px;
     background-image: url(../images/line.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: auto;
+    background-size: contain;
+    position: absolute;
+    right: 0;
   }
 }
