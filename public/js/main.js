@@ -35,4 +35,25 @@ $(document).ready(function () {
     nextArrow:
       '<span class="ap-feedback-slide-arrow ap-feedback-slide-arrow-next d-none d-md-block"><img src="./public/images/next.svg" alt=""></span>',
   });
+  $(".ap-teachers-nav").slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerPadding: 0,
+    prevArrow:
+      '<span class="ap-teachers-nav-arrow ap-teachers-nav-arrow-prev"><img src="./public/images/pre.svg" alt=""></span>',
+    nextArrow:
+      '<span class="ap-teachers-nav-arrow ap-teachers-nav-arrow-next"><img src="./public/images/next.svg" alt=""></span>',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: { slidesToShow: 2 },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 1 },
+      },
+    ],
+  });
 });
