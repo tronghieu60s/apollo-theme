@@ -1,8 +1,12 @@
+.ap-container {
+  width: 100%;
+  font-family: "Brauer NeueVN", sans-serif;
+}
+
 .ap-header {
   width: 100%;
   min-height: 964px;
-  font-family: "Brauer NeueVN", sans-serif;
-  background-image: url(../images/banner-background.svg);
+  background-image: url(../images/common/banner-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -18,6 +22,7 @@
       font-size: 20px;
       font-style: normal;
       font-weight: 600;
+      line-height: 28px;
       letter-spacing: 0.15px;
       &.dropdown-toggle::after {
         display: none;
@@ -105,7 +110,6 @@
 
 .ap-feedback {
   width: 100%;
-  font-family: "Brauer NeueVN", sans-serif;
   background-color: #bcdaf2;
   position: relative;
   &-box {
@@ -227,7 +231,7 @@
         font-family: "Brauer NeueVN", sans-serif;
         font-weight: bold;
         font-size: 22px;
-        line-height: 120%;
+        line-height: 36px;
         margin-top: 16px;
         display: none;
       }
@@ -235,7 +239,7 @@
         color: #2576b9;
         font-size: 15px;
         letter-spacing: 0.25px;
-        line-height: 120%;
+        line-height: 24px;
         margin-top: 4px;
         display: none;
       }
@@ -258,7 +262,6 @@
 
 .ap-journey {
   width: 100%;
-  font-family: "Brauer NeueVN", sans-serif;
   position: relative;
   &-title {
     width: 65%;
@@ -293,7 +296,8 @@
       color: #2576b9;
       background-color: #fff;
       text-align: center;
-      font-size: 20px;
+      font-size: 30px;
+      line-height: 36px;
       font-weight: 700;
       padding: 10px 32px;
       border: 1px solid #90a4ae;
@@ -319,7 +323,7 @@
       &:last-child:after {
         display: none;
       }
-      &-active {
+      &.active {
         color: #ffd95c;
         background-color: #2576b9;
       }
@@ -334,12 +338,21 @@
     &-tabs {
       width: 80%;
       margin: auto;
+      visibility: hidden;
+      opacity: 0;
+      display: none;
       @media screen and (max-width: 992px) {
         width: 95%;
+      }
+      &.active {
+        visibility: visible;
+        opacity: 1;
+        display: block;
       }
       &-title {
         position: relative;
         font-size: 48px;
+        line-height: 54px;
         font-weight: 700;
         color: #fff;
         text-shadow: #eb9cc3 9px 0 0, #eb9cc3 8.9445px 0.997944px 0,
@@ -416,6 +429,7 @@
       }
       &-text {
         font-family: "Montserrat", sans-serif;
+        font-size: 18px;
         line-height: 28px;
         margin-top: 47px;
         @media screen and (max-width: 768px) {
@@ -426,36 +440,17 @@
     &-images {
       width: 90%;
       margin: auto;
-      position: relative;
       margin-top: 25px;
-      &-image {
-        width: 112%;
-        transform: translateX(-6%);
-      }
-      &-background {
+      visibility: hidden;
+      opacity: 0;
+      display: none;
+      img {
         width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
       }
-      &-bulb {
-        width: 20%;
-        position: absolute;
-        top: 2%;
-        left: 1%;
-      }
-      &-star {
-        width: 15%;
-        position: absolute;
-        top: -7%;
-        left: 59%;
-      }
-      &-trophy {
-        width: 13%;
-        position: absolute;
-        top: 22%;
-        right: 1%;
+      &.active {
+        visibility: visible;
+        opacity: 1;
+        display: block;
       }
     }
   }
@@ -469,10 +464,9 @@
 }
 
 .ap-vision {
-  font-family: "Brauer NeueVN", sans-serif;
+  width: 100%;
   margin-top: 110px;
   &-accordion {
-    width: 90%;
     margin-top: 200px;
     @media screen and (max-width: 768px) {
       margin: 60px auto 0 auto;
@@ -485,7 +479,7 @@
       content: "";
       width: 100%;
       border-bottom: 1.5px solid #90a4ae;
-      margin: 12px auto;
+      margin: 24px auto;
       @media screen and (max-width: 768px) {
         width: 80%;
       }
@@ -495,7 +489,8 @@
     }
     &-title {
       color: #90a4ae;
-      font-size: 38px;
+      font-size: 48px;
+      line-height: 54px;
       font-weight: 700;
       text-transform: uppercase;
       cursor: pointer;
@@ -509,9 +504,9 @@
     &-content {
       position: relative;
       color: #2576b9;
-      font-size: 38px;
-      font-weight: 700;
+      font-size: 48px;
       line-height: 54px;
+      font-weight: 700;
       padding: 8px 8px;
       margin-top: 16px;
       margin-bottom: 35px;
@@ -585,11 +580,10 @@
     }
   }
   &-image {
-    width: 95%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     margin: auto;
     img {
       width: 100%;
@@ -607,7 +601,7 @@
 }
 
 .ap-teachers {
-  font-family: "Brauer NeueVN", sans-serif;
+  width: 100%;
   margin-top: 114px;
   &-slick {
     width: 70%;

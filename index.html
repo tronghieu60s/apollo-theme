@@ -24,411 +24,551 @@
 </head>
 
 <body>
-    <header class="ap-header">
-        <div class="ap-header-container">
-            <nav class="navbar navbar-expand-lg ap-header-navbar">
-                <img src="./public/images/logo-white.svg" class="navbar-brand d-none d-lg-block mr-0"></img>
-                <img src="./public/images/logo-mobile.svg" class="navbar-brand d-block d-lg-none mr-0"></img>
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <img src="./public/images/menu-mobile.svg" class="navbar-toggler-icon"></img>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Về chúng tôi</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Giới thiệu</a>
-                                <a class="dropdown-item" href="#">Tầm nhìn & sứ mệnh</a>
-                                <a class="dropdown-item" href="#">Vì sao chọn Apollo</a>
-                                <a class="dropdown-item" href="#">Thành tựu</a>
-                                <a class="dropdown-item" href="#">Đội ngũ giáo viên</a>
+    <div class="ap-container">
+        <header class="ap-header">
+            <div class="ap-header-container">
+                <nav class="navbar navbar-expand-lg ap-header-navbar">
+                    <img src="./public/images/common/logo-pc.svg" class="navbar-brand d-none d-lg-block mr-0"></img>
+                    <img src="./public/images/common/logo-mb.svg" class="navbar-brand d-block d-lg-none mr-0"></img>
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <img src="./public/images/common/menu-mobile.svg" class="navbar-toggler-icon"></img>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Về chúng tôi</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="#">Giới thiệu</a>
+                                    <a class="dropdown-item" href="#">Tầm nhìn & sứ mệnh</a>
+                                    <a class="dropdown-item" href="#">Vì sao chọn Apollo</a>
+                                    <a class="dropdown-item" href="#">Thành tựu</a>
+                                    <a class="dropdown-item" href="#">Đội ngũ giáo viên</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Chương trình học</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="#">AGLS</a>
+                                    <a class="dropdown-item" href="#">Apollo@Home</a>
+                                    <a class="dropdown-item" href="#">Apollo Advance</a>
+                                    <a class="dropdown-item" href="#">Apollo Clubs</a>
+                                    <a class="dropdown-item ap-header-dropdown-special" href="#">Chương trình đặc
+                                        biệt</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hệ thống trung tâm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tin tức & sự kiện</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Góc phụ huynh</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="#">Cùng con đến trường</a>
+                                    <a class="dropdown-item" href="#">Trắc nghiệm hay</a>
+                                    <a class="dropdown-item" href="#">Tài liệu hay</a>
+                                    <a class="dropdown-item" href="#">Góc sẻ chia</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="" type="button" class="ap-header-btn-login">Login Alex</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="ap-header-wave"></div>
+        </header>
+        <section class="ap-feedback">
+            <div class="ap-feedback-box">
+                <h2 class="ap-feedback-title">
+                    Hàng triệu phụ huynh đã lựa chọn Apollo English để con học cùng niềm cảm hứng!
+                </h2>
+                <div class="ap-feedback-icon-meteor">
+                    <img src="./public/images/feedback/meteor.svg" alt="">
+                </div>
+                <div class="ap-feedback-icon-double-star">
+                    <img src="./public/images/feedback/star.svg" alt="">
+                </div>
+            </div>
+            <div class="ap-feedback-slick">
+                <div class="ap-feedback-slide">
+                    <div class="ap-feedback-slide-item">
+                        <div class="ap-feedback-slide-item-quote">
+                            <img src="./public/images/feedback/quote.svg" alt="">
+                        </div>
+                        <div class="ap-feedback-slide-item-content">
+                            Ở nhà cháu rất hay lấy giáo trình ra đọc, mà đọc rất say xưa. Rồi còn đòi
+                            thêm mẹ mua cho rất nhiều sách tiếng Anh khác nữa. Tôi thấy rất vui vì con
+                            ham học. Và sau khi mở giáo trình của cháu ra đọc tôi đã hiểu tại sao cháu
+                            say mê tới vậy. Hình ảnh rất đẹp, nhiều nội dung lý thú liên quan tới các
+                            chủ đề khác nhau. Bây giờ, mỗi khi có thời gian rảnh là hai mẹ con cùng đọc
+                            với nhau. Tôi cũng phải tự mở mang thêm nhiều kiến thức lắm, để thảo luận
+                            với cháu.
+                        </div>
+                    </div>
+                    <div class="ap-feedback-slide-item">
+                        <div class="ap-feedback-slide-item-quote">
+                            <img src="./public/images/feedback/quote.svg" alt="">
+                        </div>
+                        <div class="ap-feedback-slide-item-content">
+                            Long là một cậu bé dễ mến với khả năng nói tiếng Anh lưu loát và phát âm chuẩn khi mới 7
+                            tuổi. Con đã học tiếng Anh
+                            tại Apollo 3 năm. Long đặc biệt đam mê các hoạt động trải nghiệm với thầy cô nước ngoài
+                            và bạn bè. Hiện Long đã đạt
+                            số điểm đáng nể 15/15 khiên tại kỳ thi Cambridge Starter và sẵn sang chinh phục các
+                            trình độ tiếp theo!
+                        </div>
+                    </div>
+                    <div class="ap-feedback-slide-item">
+                        <div class="ap-feedback-slide-item-quote">
+                            <img src="./public/images/feedback/quote.svg" alt="">
+                        </div>
+                        <div class="ap-feedback-slide-item-content">
+                            Tôi cho cháu bắt đầu học ở Apollo từ năm 9 tuổi, cháu đã đạt được điểm IELTS
+                            8.0 để thực hiện ước mơ du học. Apollo hỗ trợ rất nhiều cho cháu trong quá
+                            trình xin học bổng. Cháu khoe là nhờ tham gia các hoạt động ngoại khoá và
+                            các cuộc thi ở Apollo mà hồ sơ của cháu ‘đẹp’ thêm rất nhiều, khi phỏng vấn
+                            gây ấn tượng rất tốt.
+                        </div>
+                    </div>
+                    <div class="ap-feedback-slide-item">
+                        <div class="ap-feedback-slide-item-quote">
+                            <img src="./public/images/feedback/quote.svg" alt="">
+                        </div>
+                        <div class="ap-feedback-slide-item-content">
+                            Ở nhà cháu rất hay lấy giáo trình ra đọc, mà đọc rất say xưa. Rồi còn đòi
+                            thêm mẹ mua cho rất nhiều sách tiếng Anh khác nữa. Tôi thấy rất vui vì con
+                            ham học. Và sau khi mở giáo trình của cháu ra đọc tôi đã hiểu tại sao cháu
+                            say mê tới vậy. Hình ảnh rất đẹp, nhiều nội dung lý thú liên quan tới các
+                            chủ đề khác nhau. Bây giờ, mỗi khi có thời gian rảnh là hai mẹ con cùng đọc
+                            với nhau. Tôi cũng phải tự mở mang thêm nhiều kiến thức lắm, để thảo luận
+                            với cháu.
+                        </div>
+                    </div>
+                    <div class="ap-feedback-slide-item">
+                        <div class="ap-feedback-slide-item-quote">
+                            <img src="./public/images/feedback/quote.svg" alt="">
+                        </div>
+                        <div class="ap-feedback-slide-item-content">
+                            Long là một cậu bé dễ mến với khả năng nói tiếng Anh lưu loát và phát âm chuẩn khi mới 7
+                            tuổi. Con đã học tiếng Anh
+                            tại Apollo 3 năm. Long đặc biệt đam mê các hoạt động trải nghiệm với thầy cô nước ngoài
+                            và bạn bè. Hiện Long đã đạt
+                            số điểm đáng nể 15/15 khiên tại kỳ thi Cambridge Starter và sẵn sang chinh phục các
+                            trình độ tiếp theo!
+                        </div>
+                    </div>
+                    <div class="ap-feedback-slide-item">
+                        <div class="ap-feedback-slide-item-quote">
+                            <img src="./public/images/feedback/quote.svg" alt="">
+                        </div>
+                        <div class="ap-feedback-slide-item-content">
+                            Tôi cho cháu bắt đầu học ở Apollo từ năm 9 tuổi, cháu đã đạt được điểm IELTS
+                            8.0 để thực hiện ước mơ du học. Apollo hỗ trợ rất nhiều cho cháu trong quá
+                            trình xin học bổng. Cháu khoe là nhờ tham gia các hoạt động ngoại khoá và
+                            các cuộc thi ở Apollo mà hồ sơ của cháu ‘đẹp’ thêm rất nhiều, khi phỏng vấn
+                            gây ấn tượng rất tốt.
+                        </div>
+                    </div>
+                </div>
+                <div class="ap-feedback-nav">
+                    <div class="ap-feedback-nav-item">
+                        <div class="ap-feedback-nav-item-image">
+                            <img src="./public/images/feedback/picture-3.png" alt="">
+                        </div>
+                        <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
+                        <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
+                    </div>
+                    <div class="ap-feedback-nav-item">
+                        <div class="ap-feedback-nav-item-image">
+                            <img src="./public/images/feedback/picture-4.png" alt="">
+                        </div>
+                        <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
+                        <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
+                    </div>
+                    <div class="ap-feedback-nav-item">
+                        <div class="ap-feedback-nav-item-image">
+                            <img src="./public/images/feedback/picture-5.png" alt="">
+                        </div>
+                        <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
+                        <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
+                    </div>
+                    <div class="ap-feedback-nav-item">
+                        <div class="ap-feedback-nav-item-image">
+                            <img src="./public/images/feedback/picture-1.png" alt="">
+                        </div>
+                        <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
+                        <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
+                    </div>
+                    <div class="ap-feedback-nav-item">
+                        <div class="ap-feedback-nav-item-image">
+                            <img src="./public/images/feedback/picture-2.png" alt="">
+                        </div>
+                        <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
+                        <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
+                    </div>
+                    <div class="ap-feedback-nav-item">
+                        <div class="ap-feedback-nav-item-image">
+                            <img src="./public/images/feedback/picture-3.png" alt="">
+                        </div>
+                        <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
+                        <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
+                    </div>
+                    <div class="ap-feedback-nav-item">
+                        <div class="ap-feedback-nav-item-image">
+                            <img src="./public/images/feedback/picture-4.png" alt="">
+                        </div>
+                        <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
+                        <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
+                    </div>
+                    <div class="ap-feedback-nav-item">
+                        <div class="ap-feedback-nav-item-image">
+                            <img src="./public/images/feedback/picture-5.png" alt="">
+                        </div>
+                        <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
+                        <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
+                    </div>
+                    <div class="ap-feedback-nav-item">
+                        <div class="ap-feedback-nav-item-image">
+                            <img src="./public/images/feedback/picture-1.png" alt="">
+                        </div>
+                        <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
+                        <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
+                    </div>
+                    <div class="ap-feedback-nav-item">
+                        <div class="ap-feedback-nav-item-image">
+                            <img src="./public/images/feedback/picture-2.png" alt="">
+                        </div>
+                        <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
+                        <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ap-journey">
+            <div class="ap-journey-wave"></div>
+            <div class="ap-journey-box">
+                <h2 class="ap-journey-title">
+                    Hành trình hơn 25 năm nuôi dưỡng sự tự tin của hàng triệu trẻ em việt!
+                </h2>
+                <ul class="ap-journey-tabs">
+                    <li class="ap-journey-tabs-item active">Tổng quan</li>
+                    <li class="ap-journey-tabs-item">1995</li>
+                    <li class="ap-journey-tabs-item">1996</li>
+                    <li class="ap-journey-tabs-item">2002</li>
+                    <li class="ap-journey-tabs-item">2006</li>
+                    <li class="ap-journey-tabs-item">2007</li>
+                    <li class="ap-journey-tabs-item">2021</li>
+                </ul>
+                <div class="container-fluid ap-journey-content">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="ap-journey-content-images active">
+                                <img src="./public/images/journey/picture-1.png">
                             </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Chương trình học</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">AGLS</a>
-                                <a class="dropdown-item" href="#">Apollo@Home</a>
-                                <a class="dropdown-item" href="#">Apollo Advance</a>
-                                <a class="dropdown-item" href="#">Apollo Clubs</a>
-                                <a class="dropdown-item ap-header-dropdown-special" href="#">Chương trình đặc biệt</a>
+                            <div class="ap-journey-content-images">
+                                <img src="./public/images/journey/picture-2.png">
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Hệ thống trung tâm</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Tin tức & sự kiện</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Góc phụ huynh</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Cùng con đến trường</a>
-                                <a class="dropdown-item" href="#">Trắc nghiệm hay</a>
-                                <a class="dropdown-item" href="#">Tài liệu hay</a>
-                                <a class="dropdown-item" href="#">Góc sẻ chia</a>
+                            <div class="ap-journey-content-images">
+                                <img src="./public/images/journey/picture-3.png">
                             </div>
-                        </li>
-                    </ul>
-                    <div>
-                        <a href="" type="button" class="ap-header-btn-login">Login Alex</a>
+                            <div class="ap-journey-content-images">
+                                <img src="./public/images/journey/picture-4.png">
+                            </div>
+                            <div class="ap-journey-content-images">
+                                <img src="./public/images/journey/picture-5.png">
+                            </div>
+                            <div class="ap-journey-content-images">
+                                <img src="./public/images/journey/picture-6.png">
+                            </div>
+                            <div class="ap-journey-content-images">
+                                <img src="./public/images/journey/picture-7.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <div class="ap-journey-content-tabs active">
+                                <h2 class="ap-journey-content-tabs-title">
+                                    Chào mừng bạn đến với Apollo English!
+                                    <div class="ap-journey-content-tabs-title-bg">
+                                        Chào mừng bạn đến với Apollo English!
+                                    </div>
+                                </h2>
+                                <div class="ap-journey-content-tabs-text">
+                                    <p>
+                                        Chào mừng bạn đến với “Where the best become better” - nơi các học viên được
+                                        truyền
+                                        cảm hứng để tự tin sử dụng Tiếng Anh như ngôn ngữ thứ hai, làm chủ kỹ năng tương
+                                        lai
+                                        và khai phóng tiềm năng của bản thân trước thế giới không ngừng biến đổi.
+                                    </p>
+                                    <p>
+                                        Trong suốt hơn 25 năm mang tiếng Anh gần hơn với cuộc sống, Apollo tự hào và cảm
+                                        thấy biết ơn khi được chứng kiến các thế hệ học viên của mình trưởng thành, và
+                                        thành
+                                        công. Chắc chắn chúng tôi sẽ nỗ lực hơn nữa để mang đến những trải nghiệm học
+                                        tập
+                                        tuyệt vời!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ap-journey-content-tabs">
+                                <h2 class="ap-journey-content-tabs-title">
+                                    Thành lập
+                                    <div class="ap-journey-content-tabs-title-bg">
+                                        Thành lập
+                                    </div>
+                                </h2>
+                                <div class="ap-journey-content-tabs-text">
+                                    <p>
+                                        Trung tâm tiếng Anh Apollo đầu tiên được thành lập bởi 2 nhà sáng lập Khalid
+                                        Muhmood & Arabella Peters với sự chứng kiến
+                                        của đại diện Hoàng Gia Anh và Bộ Giáo dục & Đào tạo Việt Nam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ap-journey-content-tabs">
+                                <h2 class="ap-journey-content-tabs-title">
+                                    Đối tác chiến lược
+                                    <div class="ap-journey-content-tabs-title-bg">
+                                        Đối tác chiến lược
+                                    </div>
+                                </h2>
+                                <div class="ap-journey-content-tabs-text">
+                                    <p>
+                                        Trở thành đối tác chiến lược của Đài truyền hình Việt Nam với vai trò cố vấn cho
+                                        những chương trình giáo dục danh tiếng
+                                        như: Đường lên đỉnh Olympia, Rung chuông vàng...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ap-journey-content-tabs">
+                                <h2 class="ap-journey-content-tabs-title">
+                                    Trung tâm ở phía Nam
+                                    <div class="ap-journey-content-tabs-title-bg">
+                                        Trung tâm ở phía Nam
+                                    </div>
+                                </h2>
+                                <div class="ap-journey-content-tabs-text">
+                                    <p>
+                                        Mở rộng hệ thống trung tâm sang các tỉnh ở phía Nam với trung tâm đầu tiên tại Tp.Hồ Chí Minh dưới sự chứng kiến của đại
+                                        diện Hoàng Gia Anh.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ap-journey-content-tabs">
+                                <h2 class="ap-journey-content-tabs-title">
+                                    Thành viên Hoàng gia
+                                    <div class="ap-journey-content-tabs-title-bg">
+                                        Thành viên Hoàng gia
+                                    </div>
+                                </h2>
+                                <div class="ap-journey-content-tabs-text">
+                                    <p>
+                                        Đạt mốc 50+ trung tâm trên khắp Việt Nam và được vinh danh là “Doanh nghiệp quản trị tốt nhất Việt Nam” do Deloitte trao
+                                        tặng
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ap-journey-content-tabs">
+                                <h2 class="ap-journey-content-tabs-title">
+                                    Đào tạo công dân toàn cầu
+                                    <div class="ap-journey-content-tabs-title-bg">
+                                        Đào tạo công dân toàn cầu
+                                    </div>
+                                </h2>
+                                <div class="ap-journey-content-tabs-text">
+                                    <p>
+                                        Apollo được vinh danh “Tổ chức đào tạo Anh ngữ của năm” tại EducationInvestor Asia Awards với vai trò tiên phong mang
+                                        đến trẻ em Việt Nam chương trình đào tạo công dân toàn cầu.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ap-journey-content-tabs">
+                                <h2 class="ap-journey-content-tabs-title">
+                                    50+ trung tâm
+                                    <div class="ap-journey-content-tabs-title-bg">
+                                        50+ trung tâm
+                                    </div>
+                                </h2>
+                                <div class="ap-journey-content-tabs-text">
+                                    <p>
+                                        Đạt mốc 50+ trung tâm trên khắp Việt Nam và được vinh danh là “Doanh nghiệp quản trị tốt nhất Việt Nam” do Deloitte trao
+                                        tặng.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
-        <div class="ap-header-wave"></div>
-    </header>
-    <section class="ap-feedback">
-        <div class="ap-feedback-box">
-            <h2 class="ap-feedback-title">
-                Hàng triệu phụ huynh đã lựa chọn Apollo English để con học cùng niềm cảm hứng!
-            </h2>
-            <div class="ap-feedback-icon-meteor">
-                <img src="./public/images/meteor.svg" alt="">
-            </div>
-            <div class="ap-feedback-icon-double-star">
-                <img src="./public/images/double-star.svg" alt="">
-            </div>
-        </div>
-        <div class="ap-feedback-slick">
-            <div class="ap-feedback-slide">
-                <div class="ap-feedback-slide-item">
-                    <div class="ap-feedback-slide-item-quote">
-                        <img src="./public/images/quote.svg" alt="">
-                    </div>
-                    <div class="ap-feedback-slide-item-content">
-                        Ở nhà cháu rất hay lấy giáo trình ra đọc, mà đọc rất say xưa. Rồi còn đòi
-                        thêm mẹ mua cho rất nhiều sách tiếng Anh khác nữa. Tôi thấy rất vui vì con
-                        ham học. Và sau khi mở giáo trình của cháu ra đọc tôi đã hiểu tại sao cháu
-                        say mê tới vậy. Hình ảnh rất đẹp, nhiều nội dung lý thú liên quan tới các
-                        chủ đề khác nhau. Bây giờ, mỗi khi có thời gian rảnh là hai mẹ con cùng đọc
-                        với nhau. Tôi cũng phải tự mở mang thêm nhiều kiến thức lắm, để thảo luận
-                        với cháu.
-                    </div>
-                </div>
-                <div class="ap-feedback-slide-item">
-                    <div class="ap-feedback-slide-item-quote">
-                        <img src="./public/images/quote.svg" alt="">
-                    </div>
-                    <div class="ap-feedback-slide-item-content">
-                        Long là một cậu bé dễ mến với khả năng nói tiếng Anh lưu loát và phát âm chuẩn khi mới 7
-                        tuổi. Con đã học tiếng Anh
-                        tại Apollo 3 năm. Long đặc biệt đam mê các hoạt động trải nghiệm với thầy cô nước ngoài
-                        và bạn bè. Hiện Long đã đạt
-                        số điểm đáng nể 15/15 khiên tại kỳ thi Cambridge Starter và sẵn sang chinh phục các
-                        trình độ tiếp theo!
-                    </div>
-                </div>
-                <div class="ap-feedback-slide-item">
-                    <div class="ap-feedback-slide-item-quote">
-                        <img src="./public/images/quote.svg" alt="">
-                    </div>
-                    <div class="ap-feedback-slide-item-content">
-                        Tôi cho cháu bắt đầu học ở Apollo từ năm 9 tuổi, cháu đã đạt được điểm IELTS
-                        8.0 để thực hiện ước mơ du học. Apollo hỗ trợ rất nhiều cho cháu trong quá
-                        trình xin học bổng. Cháu khoe là nhờ tham gia các hoạt động ngoại khoá và
-                        các cuộc thi ở Apollo mà hồ sơ của cháu ‘đẹp’ thêm rất nhiều, khi phỏng vấn
-                        gây ấn tượng rất tốt.
-                    </div>
-                </div>
-                <div class="ap-feedback-slide-item">
-                    <div class="ap-feedback-slide-item-quote">
-                        <img src="./public/images/quote.svg" alt="">
-                    </div>
-                    <div class="ap-feedback-slide-item-content">
-                        Ở nhà cháu rất hay lấy giáo trình ra đọc, mà đọc rất say xưa. Rồi còn đòi
-                        thêm mẹ mua cho rất nhiều sách tiếng Anh khác nữa. Tôi thấy rất vui vì con
-                        ham học. Và sau khi mở giáo trình của cháu ra đọc tôi đã hiểu tại sao cháu
-                        say mê tới vậy. Hình ảnh rất đẹp, nhiều nội dung lý thú liên quan tới các
-                        chủ đề khác nhau. Bây giờ, mỗi khi có thời gian rảnh là hai mẹ con cùng đọc
-                        với nhau. Tôi cũng phải tự mở mang thêm nhiều kiến thức lắm, để thảo luận
-                        với cháu.
-                    </div>
-                </div>
-                <div class="ap-feedback-slide-item">
-                    <div class="ap-feedback-slide-item-quote">
-                        <img src="./public/images/quote.svg" alt="">
-                    </div>
-                    <div class="ap-feedback-slide-item-content">
-                        Long là một cậu bé dễ mến với khả năng nói tiếng Anh lưu loát và phát âm chuẩn khi mới 7
-                        tuổi. Con đã học tiếng Anh
-                        tại Apollo 3 năm. Long đặc biệt đam mê các hoạt động trải nghiệm với thầy cô nước ngoài
-                        và bạn bè. Hiện Long đã đạt
-                        số điểm đáng nể 15/15 khiên tại kỳ thi Cambridge Starter và sẵn sang chinh phục các
-                        trình độ tiếp theo!
-                    </div>
-                </div>
-                <div class="ap-feedback-slide-item">
-                    <div class="ap-feedback-slide-item-quote">
-                        <img src="./public/images/quote.svg" alt="">
-                    </div>
-                    <div class="ap-feedback-slide-item-content">
-                        Tôi cho cháu bắt đầu học ở Apollo từ năm 9 tuổi, cháu đã đạt được điểm IELTS
-                        8.0 để thực hiện ước mơ du học. Apollo hỗ trợ rất nhiều cho cháu trong quá
-                        trình xin học bổng. Cháu khoe là nhờ tham gia các hoạt động ngoại khoá và
-                        các cuộc thi ở Apollo mà hồ sơ của cháu ‘đẹp’ thêm rất nhiều, khi phỏng vấn
-                        gây ấn tượng rất tốt.
-                    </div>
-                </div>
-            </div>
-            <div class="ap-feedback-nav">
-                <div class="ap-feedback-nav-item">
-                    <div class="ap-feedback-nav-item-image">
-                        <img src="./public/images/item.svg" alt="">
-                    </div>
-                    <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
-                    <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
-                </div>
-                <div class="ap-feedback-nav-item">
-                    <div class="ap-feedback-nav-item-image">
-                        <img src="./public/images/item1.svg" alt="">
-                    </div>
-                    <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
-                    <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
-                </div>
-                <div class="ap-feedback-nav-item">
-                    <div class="ap-feedback-nav-item-image">
-                        <img src="./public/images/item2.svg" alt="">
-                    </div>
-                    <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
-                    <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
-                </div>
-                <div class="ap-feedback-nav-item">
-                    <div class="ap-feedback-nav-item-image">
-                        <img src="./public/images/item.svg" alt="">
-                    </div>
-                    <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
-                    <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
-                </div>
-                <div class="ap-feedback-nav-item">
-                    <div class="ap-feedback-nav-item-image">
-                        <img src="./public/images/item1.svg" alt="">
-                    </div>
-                    <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
-                    <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
-                </div>
-                <div class="ap-feedback-nav-item">
-                    <div class="ap-feedback-nav-item-image">
-                        <img src="./public/images/item2.svg" alt="">
-                    </div>
-                    <div class="ap-feedback-nav-item-name">Nguyễn Quang Long</div>
-                    <div class="ap-feedback-nav-item-local">Apollo phố Huế</div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="ap-journey">
-        <div class="ap-journey-wave"></div>
-        <div class="ap-journey-box">
-            <h2 class="ap-journey-title">
-                Hành trình hơn 25 năm nuôi dưỡng sự tự tin của hàng triệu trẻ em việt!
-            </h2>
-            <ul class="ap-journey-tabs">
-                <li class="ap-journey-tabs-item ap-journey-tabs-item-active">Tổng quan</li>
-                <li class="ap-journey-tabs-item">1995</li>
-                <li class="ap-journey-tabs-item">1996</li>
-                <li class="ap-journey-tabs-item">2002</li>
-                <li class="ap-journey-tabs-item">2006</li>
-                <li class="ap-journey-tabs-item">2007</li>
-                <li class="ap-journey-tabs-item">2021</li>
-            </ul>
-            <div class="container-fluid ap-journey-content">
+        </section>
+        <section class="ap-vision">
+            <div class="ap-vision-wave"></div>
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="ap-journey-content-images">
-                            <img src="./public/images/tongquan-jouney.svg" class="ap-journey-content-images-image">
-                            <img src="./public/images/backgroud-tongquan-jouney.svg"
-                                class="ap-journey-content-images-background">
-                            <img src="./public/images/jouney-lightbulb.svg" class="ap-journey-content-images-bulb">
-                            <img src="./public/images/star-jouney.svg" class="ap-journey-content-images-star">
-                            <img src="./public/images/trophy-jouney.svg" class="ap-journey-content-images-trophy">
+                        <div id="accordion" class="ap-vision-accordion">
+                            <div class="ap-vision-card card">
+                                <div class="ap-vision-card-title" id="headingOne" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Tầm Nhìn
+                                </div>
+                                <div id="collapseOne" class="collapse ap-vision-card-content show"
+                                    aria-labelledby="headingOne" data-parent="#accordion">
+                                    Nuôi dưỡng thế hệ trẻ tự tin
+                                    đầy tiềm năng trước thế giới
+                                    không ngừng biến đổi
+                                    <div class="ap-vision-card-content-bg">
+                                        Nuôi dưỡng thế hệ trẻ tự tin
+                                        đầy tiềm năng trước thế giới
+                                        không ngừng biến đổi
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ap-vision-card card">
+                                <div class="ap-vision-card-title" id="headingTwo" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Sứ mệnh
+                                </div>
+                                <div id="collapseTwo" class="collapse ap-vision-card-content"
+                                    aria-labelledby="headingTwo" data-parent="#accordion">
+                                    Nuôi dưỡng thế hệ trẻ tự tin
+                                    đầy tiềm năng trước thế giới
+                                    không ngừng biến đổi
+                                    <div class="ap-vision-card-content-bg">
+                                        Nuôi dưỡng thế hệ trẻ tự tin
+                                        đầy tiềm năng trước thế giới
+                                        không ngừng biến đổi
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ap-vision-card card">
+                                <div class="ap-vision-card-title" id="headingThree" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Giá
+                                    trị
+                                </div>
+                                <div id="collapseThree" class="collapse ap-vision-card-content"
+                                    aria-labelledby="headingThree" data-parent="#accordion">
+                                    Nuôi dưỡng thế hệ trẻ tự tin
+                                    đầy tiềm năng trước thế giới
+                                    không ngừng biến đổi
+                                    <div class="ap-vision-card-content-bg">
+                                        Nuôi dưỡng thế hệ trẻ tự tin
+                                        đầy tiềm năng trước thế giới
+                                        không ngừng biến đổi
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ap-vision-card card">
+                                <div class="ap-vision-card-title" id="headingFour" data-toggle="collapse"
+                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Cam
+                                    kết
+                                </div>
+                                <div id="collapseFour" class="collapse ap-vision-card-content"
+                                    aria-labelledby="headingFour" data-parent="#accordion">
+                                    Nuôi dưỡng thế hệ trẻ tự tin
+                                    đầy tiềm năng trước thế giới
+                                    không ngừng biến đổi
+                                    <div class="ap-vision-card-content-bg">
+                                        Nuôi dưỡng thế hệ trẻ tự tin
+                                        đầy tiềm năng trước thế giới
+                                        không ngừng biến đổi
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 mt-5 mt-lg-0">
-                        <div class="ap-journey-content-tabs">
-                            <h2 class="ap-journey-content-tabs-title">
-                                Chào mừng bạn đến với Apollo English!
-                                <div class="ap-journey-content-tabs-title-bg">
-                                    Chào mừng bạn đến với Apollo English!
-                                </div>
-                            </h2>
-                            <div class="ap-journey-content-tabs-text">
-                                <p>
-                                    Chào mừng bạn đến với “Where the best become better” - nơi các học viên được truyền
-                                    cảm hứng để tự tin sử dụng Tiếng Anh như ngôn ngữ thứ hai, làm chủ kỹ năng tương lai
-                                    và khai phóng tiềm năng của bản thân trước thế giới không ngừng biến đổi.
-                                </p>
-                                <p>
-                                    Trong suốt hơn 25 năm mang tiếng Anh gần hơn với cuộc sống, Apollo tự hào và cảm
-                                    thấy biết ơn khi được chứng kiến các thế hệ học viên của mình trưởng thành, và thành
-                                    công. Chắc chắn chúng tôi sẽ nỗ lực hơn nữa để mang đến những trải nghiệm học tập
-                                    tuyệt vời!
-                                </p>
-                            </div>
+                    <div class="col-lg-6">
+                        <div class="ap-vision-image">
+                            <img src="./public/images/vision.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="ap-vision">
-        <div class="ap-vision-wave"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div id="accordion" class="ap-vision-accordion">
-                        <div class="ap-vision-card card">
-                            <div class="ap-vision-card-title" id="headingOne" data-toggle="collapse"
-                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Tầm Nhìn
+        </section>
+        <section class="ap-teachers">
+            <div class="ap-teachers-wave"></div>
+            <div class="ap-teachers-content">
+                <div class="ap-teachers-content-title">Đội ngũ giáo viên giàu kinh nghiệm</div>
+                <div class="ap-teachers-slick">
+                    <div class="ap-teachers-nav">
+                        <div class="ap-teachers-nav-item">
+                            <div class="ap-teachers-nav-item-image">
+                                <img src="./public/images/teacher1.png" alt="">
                             </div>
-                            <div id="collapseOne" class="collapse ap-vision-card-content show"
-                                aria-labelledby="headingOne" data-parent="#accordion">
-                                Nuôi dưỡng thế hệ trẻ tự tin
-                                đầy tiềm năng trước thế giới
-                                không ngừng biến đổi
-                                <div class="ap-vision-card-content-bg">
-                                    Nuôi dưỡng thế hệ trẻ tự tin
-                                    đầy tiềm năng trước thế giới
-                                    không ngừng biến đổi
-                                </div>
-                            </div>
+                            <div class="ap-teachers-nav-item-name">Alisa Kartyshova</div>
+                            <div class="ap-teachers-nav-item-local">Giáo viên</div>
+                            <div class="ap-teachers-nav-item-content">Mỗi đứa trẻ với tôi đều thật tuyệt vời. Các con có
+                                đầy
+                                đủ
+                                tiềm năng và chỉ cần một phương pháp đúng con sẽ tỏa sáng.</div>
                         </div>
-                        <div class="ap-vision-card card">
-                            <div class="ap-vision-card-title" id="headingTwo" data-toggle="collapse"
-                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Sứ mệnh
+                        <div class="ap-teachers-nav-item">
+                            <div class="ap-teachers-nav-item-image">
+                                <img src="./public/images/teacher2.png" alt="">
                             </div>
-                            <div id="collapseTwo" class="collapse ap-vision-card-content" aria-labelledby="headingTwo"
-                                data-parent="#accordion">
-                                Nuôi dưỡng thế hệ trẻ tự tin
-                                đầy tiềm năng trước thế giới
-                                không ngừng biến đổi
-                                <div class="ap-vision-card-content-bg">
-                                    Nuôi dưỡng thế hệ trẻ tự tin
-                                    đầy tiềm năng trước thế giới
-                                    không ngừng biến đổi
-                                </div>
-                            </div>
+                            <div class="ap-teachers-nav-item-name">Saskia Vallendar</div>
+                            <div class="ap-teachers-nav-item-local">Giám đốc đào tạo vùng</div>
+                            <div class="ap-teachers-nav-item-content">Tôi luôn có một mong muốn làm sao để giờ học cuốn
+                                hút
+                                nhất, khiến các con yêu thích học hành và chủ động khám phá.</div>
                         </div>
-                        <div class="ap-vision-card card">
-                            <div class="ap-vision-card-title" id="headingThree" data-toggle="collapse"
-                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Giá trị
+                        <div class="ap-teachers-nav-item">
+                            <div class="ap-teachers-nav-item-image">
+                                <img src="./public/images/teacher3.png" alt="">
                             </div>
-                            <div id="collapseThree" class="collapse ap-vision-card-content"
-                                aria-labelledby="headingThree" data-parent="#accordion">
-                                Nuôi dưỡng thế hệ trẻ tự tin
-                                đầy tiềm năng trước thế giới
-                                không ngừng biến đổi
-                                <div class="ap-vision-card-content-bg">
-                                    Nuôi dưỡng thế hệ trẻ tự tin
-                                    đầy tiềm năng trước thế giới
-                                    không ngừng biến đổi
-                                </div>
-                            </div>
+                            <div class="ap-teachers-nav-item-name">Gary Spinks</div>
+                            <div class="ap-teachers-nav-item-local">Giám đốc đào tạo cấp cao</div>
+                            <div class="ap-teachers-nav-item-content">Tạm dừng đến trường không có nghĩa là tạm dừng học
+                                tập.
+                                Thật tự hào vì tại Apollo thầy trò chúng tôi vẫn đang được vui
+                                học cùng nhau mỗi ngày với Apollo@Home.</div>
                         </div>
-                        <div class="ap-vision-card card">
-                            <div class="ap-vision-card-title" id="headingFour" data-toggle="collapse"
-                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Cam kết
+                        <div class="ap-teachers-nav-item">
+                            <div class="ap-teachers-nav-item-image">
+                                <img src="./public/images/teacher1.png" alt="">
                             </div>
-                            <div id="collapseFour" class="collapse ap-vision-card-content" aria-labelledby="headingFour"
-                                data-parent="#accordion">
-                                Nuôi dưỡng thế hệ trẻ tự tin
-                                đầy tiềm năng trước thế giới
-                                không ngừng biến đổi
-                                <div class="ap-vision-card-content-bg">
-                                    Nuôi dưỡng thế hệ trẻ tự tin
-                                    đầy tiềm năng trước thế giới
-                                    không ngừng biến đổi
-                                </div>
-                            </div>
+                            <div class="ap-teachers-nav-item-name">Alisa Kartyshova</div>
+                            <div class="ap-teachers-nav-item-local">Giáo viên</div>
+                            <div class="ap-teachers-nav-item-content">Mỗi đứa trẻ với tôi đều thật tuyệt vời. Các con có
+                                đầy
+                                đủ
+                                tiềm năng và chỉ cần một phương pháp đúng con sẽ tỏa sáng.</div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="ap-vision-image">
-                        <img src="./public/images/vision.png" alt="">
+                        <div class="ap-teachers-nav-item">
+                            <div class="ap-teachers-nav-item-image">
+                                <img src="./public/images/teacher2.png" alt="">
+                            </div>
+                            <div class="ap-teachers-nav-item-name">Saskia Vallendar</div>
+                            <div class="ap-teachers-nav-item-local">Giám đốc đào tạo vùng</div>
+                            <div class="ap-teachers-nav-item-content">Tôi luôn có một mong muốn làm sao để giờ học cuốn
+                                hút
+                                nhất, khiến các con yêu thích học hành và chủ động khám phá.</div>
+                        </div>
+                        <div class="ap-teachers-nav-item">
+                            <div class="ap-teachers-nav-item-image">
+                                <img src="./public/images/teacher3.png" alt="">
+                            </div>
+                            <div class="ap-teachers-nav-item-name">Gary Spinks</div>
+                            <div class="ap-teachers-nav-item-local">Giám đốc đào tạo cấp cao</div>
+                            <div class="ap-teachers-nav-item-content">Tạm dừng đến trường không có nghĩa là tạm dừng học
+                                tập.
+                                Thật tự hào vì tại Apollo thầy trò chúng tôi vẫn đang được vui
+                                học cùng nhau mỗi ngày với Apollo@Home.</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="ap-teachers">
-        <div class="ap-teachers-wave"></div>
-        <div class="ap-teachers-content">
-            <div class="ap-teachers-content-title">Đội ngũ giáo viên giàu kinh nghiệm</div>
-            <div class="ap-teachers-slick">
-                <div class="ap-teachers-nav">
-                    <div class="ap-teachers-nav-item">
-                        <div class="ap-teachers-nav-item-image">
-                            <img src="./public/images/teacher1.png" alt="">
-                        </div>
-                        <div class="ap-teachers-nav-item-name">Alisa Kartyshova</div>
-                        <div class="ap-teachers-nav-item-local">Giáo viên</div>
-                        <div class="ap-teachers-nav-item-content">Mỗi đứa trẻ với tôi đều thật tuyệt vời. Các con có đầy
-                            đủ
-                            tiềm năng và chỉ cần một phương pháp đúng con sẽ tỏa sáng.</div>
-                    </div>
-                    <div class="ap-teachers-nav-item">
-                        <div class="ap-teachers-nav-item-image">
-                            <img src="./public/images/teacher2.png" alt="">
-                        </div>
-                        <div class="ap-teachers-nav-item-name">Saskia Vallendar</div>
-                        <div class="ap-teachers-nav-item-local">Giám đốc đào tạo vùng</div>
-                        <div class="ap-teachers-nav-item-content">Tôi luôn có một mong muốn làm sao để giờ học cuốn hút
-                            nhất, khiến các con yêu thích học hành và chủ động khám phá.</div>
-                    </div>
-                    <div class="ap-teachers-nav-item">
-                        <div class="ap-teachers-nav-item-image">
-                            <img src="./public/images/teacher3.png" alt="">
-                        </div>
-                        <div class="ap-teachers-nav-item-name">Gary Spinks</div>
-                        <div class="ap-teachers-nav-item-local">Giám đốc đào tạo cấp cao</div>
-                        <div class="ap-teachers-nav-item-content">Tạm dừng đến trường không có nghĩa là tạm dừng học
-                            tập.
-                            Thật tự hào vì tại Apollo thầy trò chúng tôi vẫn đang được vui
-                            học cùng nhau mỗi ngày với Apollo@Home.</div>
-                    </div>
-                    <div class="ap-teachers-nav-item">
-                        <div class="ap-teachers-nav-item-image">
-                            <img src="./public/images/teacher1.png" alt="">
-                        </div>
-                        <div class="ap-teachers-nav-item-name">Alisa Kartyshova</div>
-                        <div class="ap-teachers-nav-item-local">Giáo viên</div>
-                        <div class="ap-teachers-nav-item-content">Mỗi đứa trẻ với tôi đều thật tuyệt vời. Các con có đầy
-                            đủ
-                            tiềm năng và chỉ cần một phương pháp đúng con sẽ tỏa sáng.</div>
-                    </div>
-                    <div class="ap-teachers-nav-item">
-                        <div class="ap-teachers-nav-item-image">
-                            <img src="./public/images/teacher2.png" alt="">
-                        </div>
-                        <div class="ap-teachers-nav-item-name">Saskia Vallendar</div>
-                        <div class="ap-teachers-nav-item-local">Giám đốc đào tạo vùng</div>
-                        <div class="ap-teachers-nav-item-content">Tôi luôn có một mong muốn làm sao để giờ học cuốn hút
-                            nhất, khiến các con yêu thích học hành và chủ động khám phá.</div>
-                    </div>
-                    <div class="ap-teachers-nav-item">
-                        <div class="ap-teachers-nav-item-image">
-                            <img src="./public/images/teacher3.png" alt="">
-                        </div>
-                        <div class="ap-teachers-nav-item-name">Gary Spinks</div>
-                        <div class="ap-teachers-nav-item-local">Giám đốc đào tạo cấp cao</div>
-                        <div class="ap-teachers-nav-item-content">Tạm dừng đến trường không có nghĩa là tạm dừng học
-                            tập.
-                            Thật tự hào vì tại Apollo thầy trò chúng tôi vẫn đang được vui
-                            học cùng nhau mỗi ngày với Apollo@Home.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ap-teachers-wave2"></div>
-    </section>
+            <div class="ap-teachers-wave2"></div>
+        </section>
+    </div>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- JQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./public/js/jquery-3.3.1.slim.min.js"></script>
     <script src="./public/js/popper.min.js"></script>
     <script src="./public/js/bootstrap.min.js"></script>

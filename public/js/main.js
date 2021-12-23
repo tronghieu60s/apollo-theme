@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  /* Slick JS */
   $(".ap-feedback-nav").slick({
     dots: false,
     infinite: true,
@@ -55,5 +56,16 @@ $(document).ready(function () {
         settings: { slidesToShow: 1 },
       },
     ],
+  });
+
+  /* Custom JS */
+  $(".ap-journey-tabs-item").click(function () {
+    const currentIndex = $(".ap-journey-tabs-item").index(this);
+    $(`.ap-journey-tabs-item`).removeClass("active");
+    $(`.ap-journey-tabs-item:eq(${currentIndex})`).addClass("active");
+    $(`.ap-journey-content-images`).removeClass("active");
+    $(`.ap-journey-content-images:eq(${currentIndex})`).addClass("active");
+    $(`.ap-journey-content-tabs`).removeClass("active");
+    $(`.ap-journey-content-tabs:eq(${currentIndex})`).addClass("active");
   });
 });
