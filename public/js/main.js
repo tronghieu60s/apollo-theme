@@ -10,9 +10,9 @@ $(document).ready(function () {
     focusOnSelect: true,
     asNavFor: ".ap-feedback-slide",
     prevArrow:
-      '<span class="ap-feedback-nav-arrow ap-feedback-nav-arrow-prev d-block d-md-none"><img src="./public/images/pre.svg" alt=""></span>',
+      '<span class="ap-feedback-nav-arrow ap-feedback-nav-arrow-prev d-block d-md-none"><img src="./public/images/common/arrow-prev.svg" alt=""></span>',
     nextArrow:
-      '<span class="ap-feedback-nav-arrow ap-feedback-nav-arrow-next d-block d-md-none"><img src="./public/images/next.svg" alt=""></span>',
+      '<span class="ap-feedback-nav-arrow ap-feedback-nav-arrow-next d-block d-md-none"><img src="./public/images/common/arrow-next.svg" alt=""></span>',
     responsive: [
       {
         breakpoint: 1200,
@@ -32,9 +32,9 @@ $(document).ready(function () {
     slidesToScroll: 1,
     asNavFor: ".ap-feedback-nav",
     prevArrow:
-      '<span class="ap-feedback-slide-arrow ap-feedback-slide-arrow-prev d-none d-md-block"><img src="./public/images/pre.svg" alt=""></span>',
+      '<span class="ap-feedback-slide-arrow ap-feedback-slide-arrow-prev d-none d-md-block"><img src="./public/images/common/arrow-prev.svg" alt=""></span>',
     nextArrow:
-      '<span class="ap-feedback-slide-arrow ap-feedback-slide-arrow-next d-none d-md-block"><img src="./public/images/next.svg" alt=""></span>',
+      '<span class="ap-feedback-slide-arrow ap-feedback-slide-arrow-next d-none d-md-block"><img src="./public/images/common/arrow-next.svg" alt=""></span>',
   });
   $(".ap-teachers-nav").slick({
     dots: false,
@@ -43,9 +43,9 @@ $(document).ready(function () {
     slidesToScroll: 1,
     centerPadding: 0,
     prevArrow:
-      '<span class="ap-teachers-nav-arrow ap-teachers-nav-arrow-prev"><img src="./public/images/pre.svg" alt=""></span>',
+      '<span class="ap-teachers-nav-arrow ap-teachers-nav-arrow-prev"><img src="./public/images/common/arrow-prev.svg" alt=""></span>',
     nextArrow:
-      '<span class="ap-teachers-nav-arrow ap-teachers-nav-arrow-next"><img src="./public/images/next.svg" alt=""></span>',
+      '<span class="ap-teachers-nav-arrow ap-teachers-nav-arrow-next"><img src="./public/images/common/arrow-next.svg" alt=""></span>',
     responsive: [
       {
         breakpoint: 1200,
