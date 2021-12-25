@@ -196,8 +196,8 @@
       .slick-slide .ap-feedback-nav-item-local {
         font-size: 15px;
         line-height: 24px;
-        font-weight: normal;
-        font-family: "Brauer NeueVN", sans-serif;
+        font-weight: 400;
+        font-family: "Montserrat", sans-serif;
         letter-spacing: 0.25px;
         color: #2576b9;
         margin-top: 4px;
@@ -620,5 +620,194 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 144px; }
+
+.ap-infrastructure {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 128px; }
+  .ap-infrastructure-title {
+    font-size: 48px;
+    line-height: 54px;
+    font-weight: 700;
+    font-family: "Brauer NeueVN", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    color: #2576b9;
+    margin: auto; }
+    @media (max-width: 768px) {
+      .ap-infrastructure-title {
+        width: 80%; } }
+  .ap-infrastructure-slick {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 42px; }
+    @media (max-width: 768px) {
+      .ap-infrastructure-slick {
+        width: 95%; } }
+  .ap-infrastructure-slide-image {
+    height: 432px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px; }
+    @media (max-width: 768px) {
+      .ap-infrastructure-slide-image {
+        height: 343px; } }
+    .ap-infrastructure-slide-image img {
+      width: 100%; }
+  .ap-infrastructure-slide-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer; }
+    .ap-infrastructure-slide-arrow-prev {
+      left: -70px; }
+    .ap-infrastructure-slide-arrow-next {
+      right: -70px; }
+  .ap-infrastructure-nav {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 16px; }
+    @media (max-width: 768px) {
+      .ap-infrastructure-nav {
+        width: 80%; } }
+    .ap-infrastructure-nav-image {
+      height: 128px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0 6px;
+      border-radius: 10px; }
+      @media (max-width: 768px) {
+        .ap-infrastructure-nav-image {
+          height: 80px; } }
+    .ap-infrastructure-nav-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      cursor: pointer; }
+      .ap-infrastructure-nav-arrow-prev {
+        left: -50px; }
+      .ap-infrastructure-nav-arrow-next {
+        right: -50px; }
+  .ap-infrastructure-icons-icon {
+    position: absolute; }
+    .ap-infrastructure-icons-icon img {
+      width: 100%; }
+  .ap-infrastructure-icons-trophy {
+    width: 105px;
+    left: 8%; }
+  .ap-infrastructure-icons-jar {
+    width: 75px;
+    right: 6%;
+    bottom: 23%; }
+  .ap-infrastructure-icons-star1 {
+    width: 21.53px;
+    left: 12%;
+    top: 30%; }
+  .ap-infrastructure-icons-star2 {
+    width: 27.52px;
+    top: 37%;
+    right: 10%; }
+  .ap-infrastructure-wave {
+    background-image: url("../images/common/line-2.svg");
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 361.63px; }
+
+.ap-footer {
+  position: relative;
+  margin-top: 102px; }
+  .ap-footer-wave {
+    background-image: url("../images/common/line-3.svg");
+    background-size: contain;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    top: -62px;
+    right: 0;
+    bottom: 0;
+    left: 15px;
+    position: absolute;
+    width: 87%;
+    height: 565px;
+    transform: rotate(-4deg); }
+  .ap-footer-background {
+    width: 100%;
+    height: 100%; }
+    .ap-footer-background img {
+      width: 100%; }
+  .ap-footer-stars {
+    top: -100px;
+    right: auto;
+    bottom: auto;
+    left: 5%;
+    position: absolute; }
+    .ap-footer-stars img {
+      width: 100%; }
+  .ap-footer-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%); }
+    .ap-footer-top-badge {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 250px; }
+      .ap-footer-top-badge-bg {
+        position: absolute;
+        z-index: -1; }
+      .ap-footer-top-badge-content {
+        position: absolute; }
+        .ap-footer-top-badge-content.top {
+          width: 250px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          top: 100px; }
+        .ap-footer-top-badge-content.top .ap-footer-top-badge-content-title {
+          text-align: center; }
+        .ap-footer-top-badge-content.center {
+          width: 56%;
+          left: 23.5%;
+          top: 225px; }
+        .ap-footer-top-badge-content.bottom {
+          width: 66%;
+          left: 16.5%;
+          top: 400px; }
+        .ap-footer-top-badge-content-double {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .ap-footer-top-badge-content-double div {
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+        .ap-footer-top-badge-content-double div:first-child .ap-footer-top-badge-content-title {
+          text-align: right; }
+        .ap-footer-top-badge-content-double div:first-child .ap-footer-top-badge-content-icon {
+          margin-left: 16px; }
+        .ap-footer-top-badge-content-double div:last-child .ap-footer-top-badge-content-icon {
+          margin-right: 16px; }
+        .ap-footer-top-badge-content-title {
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 700;
+          font-family: "Brauer NeueVN", sans-serif;
+          letter-spacing: 0.15px;
+          color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */

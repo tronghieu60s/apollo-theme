@@ -57,6 +57,32 @@ $(document).ready(function () {
       },
     ],
   });
+  $(".ap-infrastructure-nav").slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: 0,
+    focusOnSelect: true,
+    asNavFor: ".ap-infrastructure-slide",
+    prevArrow:
+      '<span class="ap-infrastructure-nav-arrow ap-infrastructure-nav-arrow-prev d-block d-md-none"><img src="./public/images/common/arrow-prev.svg" alt=""></span>',
+    nextArrow:
+      '<span class="ap-infrastructure-nav-arrow ap-infrastructure-nav-arrow-next d-block d-md-none"><img src="./public/images/common/arrow-next.svg" alt=""></span>',
+  });
+  $(".ap-infrastructure-slide").slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerPadding: 0,
+    asNavFor: ".ap-infrastructure-nav",
+    prevArrow:
+      '<span class="ap-infrastructure-slide-arrow ap-infrastructure-slide-arrow-prev d-none d-md-block"><img src="./public/images/common/arrow-prev.svg" alt=""></span>',
+    nextArrow:
+      '<span class="ap-infrastructure-slide-arrow ap-infrastructure-slide-arrow-next d-none d-md-block"><img src="./public/images/common/arrow-next.svg" alt=""></span>',
+  });
 
   /* Custom JS */
   $(".ap-journey-tabs-item").click(function () {
