@@ -256,12 +256,12 @@ $extra-width: 1200px;
       width: 95%;
     }
   }
-  &-icon {
+  &-icons {
     &-meteor {
-      @include FramesPosition(auto, auto, -15%, -15%);
+      @include FramesPosition(auto, auto, -15%, 10%);
     }
     &-star {
-      @include FramesPosition(auto, -10%, -15%, auto);
+      @include FramesPosition(auto, 10%, -15%, auto);
     }
   }
   &-slick {
@@ -489,11 +489,22 @@ $extra-width: 1200px;
     position: relative;
     width: 100%;
     height: 144px;
+    img {
+      width: 100%;
+    }
     &-icon1 {
-      @include FramesPosition(-60%, auto, auto, -7%);
+      @include FramesPosition(-60%, auto, auto, -130px);
+      &.mobile {
+        width: 160px;
+        left: 0%;
+      }
     }
     &-icon2 {
-      @include FramesPosition(0, 5%, auto, auto);
+      @include FramesPosition(-5%, 5%, auto, auto);
+      &.mobile {
+        width: 100px;
+        right: 6%;
+      }
     }
   }
 }

@@ -111,15 +111,15 @@
     @media (max-width: 768px) {
       .ap-feedback-title {
         width: 95%; } }
-  .ap-feedback-icon-meteor {
+  .ap-feedback-icons-meteor {
     top: auto;
     right: auto;
     bottom: -15%;
-    left: -15%;
+    left: 10%;
     position: absolute; }
-  .ap-feedback-icon-star {
+  .ap-feedback-icons-star {
     top: auto;
-    right: -10%;
+    right: 10%;
     bottom: -15%;
     left: auto;
     position: absolute; }
@@ -363,18 +363,26 @@
     position: relative;
     width: 100%;
     height: 144px; }
+    .ap-journey-wave img {
+      width: 100%; }
     .ap-journey-wave-icon1 {
       top: -60%;
       right: auto;
       bottom: auto;
-      left: -7%;
+      left: -130px;
       position: absolute; }
+      .ap-journey-wave-icon1.mobile {
+        width: 160px;
+        left: 0%; }
     .ap-journey-wave-icon2 {
-      top: 0;
+      top: -5%;
       right: 5%;
       bottom: auto;
       left: auto;
       position: absolute; }
+      .ap-journey-wave-icon2.mobile {
+        width: 100px;
+        right: 6%; }
 
 .ap-vision {
   width: 100%;
