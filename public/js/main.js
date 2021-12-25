@@ -68,4 +68,10 @@ $(document).ready(function () {
     $(`.ap-journey-content-tabs`).removeClass("active");
     $(`.ap-journey-content-tabs:eq(${currentIndex})`).addClass("active");
   });
+
+  $(".ap-vision-card-title").click(function () {
+    const currentIndex = $(".ap-vision-card-title").index(this);
+    $(`.ap-vision-card-image`).removeClass("active");
+    $(`.ap-vision-card-image:eq(${currentIndex})`).addClass("active");
+  });
 });

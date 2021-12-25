@@ -104,6 +104,7 @@
     font-family: "Brauer NeueVN", sans-serif;
     text-align: center;
     text-transform: uppercase;
+    position: relative;
     width: 65%;
     color: #2576b9;
     margin: 0 auto; }
@@ -114,11 +115,11 @@
     top: auto;
     right: auto;
     bottom: -15%;
-    left: 8%;
+    left: -15%;
     position: absolute; }
   .ap-feedback-icon-star {
     top: auto;
-    right: 8%;
+    right: -10%;
     bottom: -15%;
     left: auto;
     position: absolute; }
@@ -245,7 +246,7 @@
     flex-direction: row;
     width: 75%;
     list-style-type: none;
-    padding: 0;
+    padding: 5px 0;
     margin: 0 auto;
     margin-top: 48px;
     overflow: scroll; }
@@ -270,7 +271,7 @@
       border-radius: 40px;
       z-index: 10;
       cursor: pointer; }
-      @media (max-width: 992px) {
+      @media (max-width: 1200px) {
         .ap-journey-tabs-item {
           margin-right: 20px; } }
       .ap-journey-tabs-item:after {
@@ -357,10 +358,23 @@
   .ap-journey-wave {
     background-image: url("../images/common/wave-2.svg");
     background-size: cover;
-    background-position: 0% 0%;
+    background-position: center;
     background-repeat: no-repeat;
+    position: relative;
     width: 100%;
     height: 144px; }
+    .ap-journey-wave-icon1 {
+      top: -60%;
+      right: auto;
+      bottom: auto;
+      left: -7%;
+      position: absolute; }
+    .ap-journey-wave-icon2 {
+      top: 0;
+      right: 5%;
+      bottom: auto;
+      left: auto;
+      position: absolute; }
 
 .ap-vision {
   width: 100%;
@@ -408,6 +422,17 @@
       padding: 8px 8px;
       margin-top: 16px;
       margin-bottom: 35px; }
+      .ap-vision-card-content p {
+        margin-left: 30px; }
+        .ap-vision-card-content p:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 18px;
+          height: 18px;
+          background-color: #2576b9;
+          border-radius: 50%;
+          margin-top: 20px; }
       .ap-vision-card-content-bg {
         top: 23px;
         right: auto;
@@ -419,15 +444,25 @@
         width: calc(100% - 16px);
         margin: 0 auto;
         z-index: -1; }
-  .ap-vision-image {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    height: 100%;
-    margin: auto; }
-    .ap-vision-image img {
-      width: 100%; }
+        .ap-vision-card-content-bg p:before {
+          display: none; }
+    .ap-vision-card-image {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+      height: 100%;
+      margin: auto;
+      margin-top: 30px; }
+      .ap-vision-card-image img {
+        width: 100%; }
+      .ap-vision-card-image.active {
+        display: block;
+        opacity: 1;
+        visibility: visible; }
   .ap-vision-wave {
     background-image: url("../images/common/line-1.svg");
     background-size: contain;
@@ -443,13 +478,13 @@
   margin-top: 114px; }
   .ap-teachers-slick {
     width: 70%;
-    padding-bottom: 72px;
     margin: 0 auto;
     margin-top: 58px; }
     @media (max-width: 768px) {
       .ap-teachers-slick {
         width: 95%; } }
   .ap-teachers-content {
+    position: relative;
     padding-top: 128px;
     padding-bottom: 152px;
     background-color: #bcdaf2; }
@@ -472,7 +507,7 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      flex-direction: column; }
+      flex-direction: row; }
     .ap-teachers-nav-item {
       display: flex;
       justify-content: center;
@@ -499,7 +534,7 @@
         font-size: 20px;
         line-height: 120%;
         font-weight: 400;
-        font-family: "Brauer NeueVN", sans-serif;
+        font-family: "Montserrat", sans-serif;
         letter-spacing: 0.25px;
         color: #2576b9;
         margin-top: 8px; }
@@ -507,7 +542,7 @@
         font-size: 14px;
         line-height: 19.6px;
         font-weight: 400;
-        font-family: "Brauer NeueVN", sans-serif;
+        font-family: "Montserrat", sans-serif;
         text-align: center;
         width: 75%;
         margin-top: 16px; }
@@ -527,6 +562,42 @@
         @media (max-width: 768px) {
           .ap-teachers-nav-arrow-next {
             right: 20px; } }
+  .ap-teachers-icons {
+    background-image: url("../images/teachers/stars.svg");
+    background-size: 90%;
+    background-position: 145% -10%;
+    background-repeat: no-repeat;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    transform: translateX(-50%);
+    opacity: 0.3; }
+    .ap-teachers-icons-icon {
+      position: absolute; }
+      .ap-teachers-icons-icon img {
+        width: 100%; }
+    .ap-teachers-icons-pin {
+      width: 103.53px;
+      top: 120px; }
+    .ap-teachers-icons-pen {
+      width: 51.49px;
+      left: -100px;
+      bottom: 200px; }
+    .ap-teachers-icons-zoom {
+      width: 88.18px;
+      bottom: 50px; }
+    .ap-teachers-icons-hat {
+      width: 100px;
+      right: -10%;
+      bottom: 70px; }
+    .ap-teachers-icons-book {
+      width: 116.63px;
+      top: 50px;
+      right: 0; }
   .ap-teachers-wave-top {
     background-image: url("../images/common/wave-3.svg");
     background-size: cover;

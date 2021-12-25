@@ -8,6 +8,7 @@ $image-wave1: "../images/common/wave-1.svg";
 $image-wave2: "../images/common/wave-2.svg";
 $image-wave3: "../images/common/wave-3.svg";
 $image-wave4: "../images/common/wave-4.svg";
+$image-stars: "../images/teachers/stars.svg";
 
 /* Mixin Responsive */
 
@@ -35,7 +36,7 @@ $extra-width: 1200px;
 }
 
 @mixin XL {
-  @media (max-width: #{$large-width}) {
+  @media (max-width: #{$extra-width}) {
     @content;
   }
 }
@@ -247,6 +248,7 @@ $extra-width: 1200px;
     @include FramesFont(48px, 54px, 700);
     text-align: center;
     text-transform: uppercase;
+    position: relative;
     width: 65%;
     color: #2576b9;
     margin: 0 auto;
@@ -256,10 +258,10 @@ $extra-width: 1200px;
   }
   &-icon {
     &-meteor {
-      @include FramesPosition(auto, auto, -15%, 8%);
+      @include FramesPosition(auto, auto, -15%, -15%);
     }
     &-star {
-      @include FramesPosition(auto, 8%, -15%, auto);
+      @include FramesPosition(auto, -10%, -15%, auto);
     }
   }
   &-slick {
@@ -385,7 +387,7 @@ $extra-width: 1200px;
     @include FramesFlex(space-between, center, row);
     width: 75%;
     list-style-type: none;
-    padding: 0;
+    padding: 5px 0;
     margin: 0 auto;
     margin-top: 48px;
     overflow: scroll;
@@ -483,9 +485,16 @@ $extra-width: 1200px;
     }
   }
   &-wave {
-    @include FramesBackgroundImage($image-wave2);
+    @include FramesBackgroundImage($image-wave2, cover, center);
+    position: relative;
     width: 100%;
     height: 144px;
+    &-icon1 {
+      @include FramesPosition(-60%, auto, auto, -7%);
+    }
+    &-icon2 {
+      @include FramesPosition(0, 5%, auto, auto);
+    }
   }
 }
 
@@ -533,21 +542,42 @@ $extra-width: 1200px;
       padding: 8px 8px;
       margin-top: 16px;
       margin-bottom: 35px;
+      p {
+        margin-left: 30px;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 18px;
+          height: 18px;
+          background-color: #2576b9;
+          border-radius: 50%;
+          margin-top: 20px;
+        }
+      }
       &-bg {
         @include FramesPosition(23px, auto, auto, 14px);
         @include FramesBigTextShadow(#ffd95c, #ffd95c);
         width: calc(100% - 16px);
         margin: 0 auto;
         z-index: -1;
+        p:before {
+          display: none;
+        }
       }
     }
-  }
-  &-image {
-    @include FramesFlex(center, flex-start);
-    height: 100%;
-    margin: auto;
-    img {
-      width: 100%;
+    &-image {
+      @include FramesFlex(flex-start, center);
+      @include FramesVisibleHidden;
+      height: 100%;
+      margin: auto;
+      margin-top: 30px;
+      img {
+        width: 100%;
+      }
+      &.active {
+        @include FramesVisibleShow;
+      }
     }
   }
   &-wave {
@@ -564,7 +594,6 @@ $extra-width: 1200px;
   margin-top: 114px;
   &-slick {
     width: 70%;
-    padding-bottom: 72px;
     margin: 0 auto;
     margin-top: 58px;
     @include MD {
@@ -572,6 +601,7 @@ $extra-width: 1200px;
     }
   }
   &-content {
+    position: relative;
     padding-top: 128px;
     padding-bottom: 152px;
     background-color: #bcdaf2;
@@ -590,7 +620,7 @@ $extra-width: 1200px;
   &-nav {
     margin-top: 16px;
     .slick-track {
-      @include FramesFlex(center, flex-start);
+      @include FramesFlex(center, flex-start, row);
     }
     &-item {
       @include FramesFlex(center, center, column);
@@ -612,13 +642,13 @@ $extra-width: 1200px;
         margin-top: 16px;
       }
       &-local {
-        @include FramesFont(20px, 120%, 400);
+        @include FramesFont(20px, 120%, 400, $font-secondary);
         letter-spacing: 0.25px;
         color: #2576b9;
         margin-top: 8px;
       }
       &-content {
-        @include FramesFont(14px, 19.6px, 400);
+        @include FramesFont(14px, 19.6px, 400, $font-secondary);
         text-align: center;
         width: 75%;
         margin-top: 16px;
@@ -642,6 +672,43 @@ $extra-width: 1200px;
           right: 20px;
         }
       }
+    }
+  }
+  &-icons {
+    @include FramesBackgroundImage($image-stars, 90%, 145% -10%);
+    @include FramesPosition(0, auto, auto, 50%);
+    width: 70%;
+    height: 100%;
+    transform: translateX(-50%);
+    opacity: 0.3;
+    &-icon {
+      position: absolute;
+      img {
+        width: 100%;
+      }
+    }
+    &-pin {
+      width: 103.53px;
+      top: 120px;
+    }
+    &-pen {
+      width: 51.49px;
+      left: -100px;
+      bottom: 200px;
+    }
+    &-zoom {
+      width: 88.18px;
+      bottom: 50px;
+    }
+    &-hat {
+      width: 100px;
+      right: -10%;
+      bottom: 70px;
+    }
+    &-book {
+      width: 116.63px;
+      top: 50px;
+      right: 0;
     }
   }
   &-wave-top {
