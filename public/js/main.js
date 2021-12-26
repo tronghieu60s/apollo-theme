@@ -100,4 +100,9 @@ $(document).ready(function () {
     $(`.ap-vision-card-image`).removeClass("active");
     $(`.ap-vision-card-image:eq(${currentIndex})`).addClass("active");
   });
+
+  $("#collapsibleNavId").collapse({ toggle: false });
+  $(".ap-header-nav-mobile-close").click(() => {
+    $("#collapsibleNavId").collapse("toggle");
+  });
 });

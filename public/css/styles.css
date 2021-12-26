@@ -24,6 +24,9 @@
     .ap-header-nav .nav-item {
       padding: 5px 0;
       margin: 0 15px; }
+      @media (max-width: 768px) {
+        .ap-header-nav .nav-item {
+          margin-bottom: 15px; } }
       .ap-header-nav .nav-item .nav-link {
         font-size: 20px;
         line-height: 28px;
@@ -31,14 +34,20 @@
         font-family: "Brauer NeueVN", sans-serif;
         letter-spacing: 0.15px;
         color: #fff; }
+        @media (max-width: 992px) {
+          .ap-header-nav .nav-item .nav-link {
+            text-align: center; } }
         .ap-header-nav .nav-item .nav-link.dropdown-toggle::after {
           display: none; }
       .ap-header-nav .nav-item .navbar-toggler:focus {
         outline: none; }
       .ap-header-nav .nav-item:hover {
+        color: #263238;
         background-color: #fff;
-        border-radius: 8px 8px 0px 0px;
-        color: #263238; }
+        border-radius: 8px 8px 0px 0px; }
+        @media (max-width: 768px) {
+          .ap-header-nav .nav-item:hover {
+            background-color: transparent; } }
         .ap-header-nav .nav-item:hover .dropdown-menu,
         .ap-header-nav .nav-item:hover .dropdown-menu:hover,
         .ap-header-nav .nav-item:hover .dropdown-submenu:hover ul.dropdown-menu {
@@ -47,6 +56,9 @@
           display: block !important; }
         .ap-header-nav .nav-item:hover a.nav-link {
           color: #2576b9; }
+          @media (max-width: 768px) {
+            .ap-header-nav .nav-item:hover a.nav-link {
+              color: #ffd95c; } }
       .ap-header-nav .nav-item.dropdown .dropdown-menu {
         border-width: 0;
         border-radius: 10px;
@@ -56,16 +68,54 @@
         padding: 0;
         margin: 0;
         box-shadow: 0 8px 16px #00000026; }
+        @media (max-width: 768px) {
+          .ap-header-nav .nav-item.dropdown .dropdown-menu {
+            background-color: transparent;
+            box-shadow: none; } }
         .ap-header-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
           font-weight: 500;
           padding-top: 14px;
           padding-bottom: 14px;
           border-radius: 10px; }
+          @media (max-width: 768px) {
+            .ap-header-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+              color: #bcdaf2;
+              text-align: center; } }
           .ap-header-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
             color: #2576b9;
             background-color: #e3f0f9; }
           .ap-header-nav .nav-item.dropdown .dropdown-menu .dropdown-item.special {
             color: #e94286; }
+    .ap-header-nav-mobile.show {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #2576b9;
+      z-index: 100; }
+    .ap-header-nav-mobile-close {
+      position: absolute;
+      top: 24px;
+      right: 32px;
+      z-index: 10;
+      display: none; }
+      @media (max-width: 992px) {
+        .ap-header-nav-mobile-close {
+          display: block; } }
+    .ap-header-nav-mobile.show .ap-header-nav-mobile-close {
+      display: block; }
+    @media (max-width: 992px) {
+      .ap-header-nav-mobile .navbar-nav {
+        margin-top: 100px !important;
+        margin-bottom: 20px; } }
+  .ap-header-right {
+    display: flex;
+    justify-content: center; }
+  .ap-header-banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; }
   .ap-header-login {
     font-size: 20px;
     line-height: 28px;
@@ -115,15 +165,21 @@
   .ap-feedback-icons-meteor {
     top: auto;
     right: auto;
-    bottom: -15%;
+    bottom: -11%;
     left: 10%;
-    position: absolute; }
+    position: absolute;
+    width: 75px; }
+    .ap-feedback-icons-meteor img {
+      width: 100%; }
   .ap-feedback-icons-star {
     top: auto;
     right: 10%;
-    bottom: -15%;
+    bottom: -11%;
     left: auto;
-    position: absolute; }
+    position: absolute;
+    width: 75px; }
+    .ap-feedback-icons-star img {
+      width: 100%; }
   .ap-feedback-slick {
     width: 60%;
     padding-bottom: 72px;
@@ -702,18 +758,34 @@
   .ap-infrastructure-icons-trophy {
     width: 105px;
     left: 8%; }
+    @media (max-width: 768px) {
+      .ap-infrastructure-icons-trophy {
+        top: -4%;
+        z-index: -1; } }
   .ap-infrastructure-icons-jar {
     width: 75px;
     right: 6%;
     bottom: 23%; }
+    @media (max-width: 768px) {
+      .ap-infrastructure-icons-jar {
+        bottom: 3%;
+        z-index: -1; } }
   .ap-infrastructure-icons-star1 {
     width: 21.53px;
     left: 12%;
     top: 30%; }
+    @media (max-width: 768px) {
+      .ap-infrastructure-icons-star1 {
+        top: 13%;
+        left: 10%; } }
   .ap-infrastructure-icons-star2 {
     width: 27.52px;
     top: 37%;
     right: 10%; }
+    @media (max-width: 768px) {
+      .ap-infrastructure-icons-star2 {
+        top: 0%;
+        right: 8%; } }
   .ap-infrastructure-wave {
     background-image: url("../images/common/line-2.svg");
     background-size: cover;

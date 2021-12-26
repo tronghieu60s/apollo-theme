@@ -163,10 +163,16 @@ $extra-width: 1200px;
     .nav-item {
       padding: 5px 0;
       margin: 0 15px;
+      @include MD {
+        margin-bottom: 15px;
+      }
       .nav-link {
         @include FramesFont(20px, 28px, 600);
         letter-spacing: 0.15px;
         color: #fff;
+        @include LG {
+          text-align: center;
+        }
         &.dropdown-toggle::after {
           display: none;
         }
@@ -177,9 +183,12 @@ $extra-width: 1200px;
         }
       }
       &:hover {
+        color: #263238;
         background-color: #fff;
         border-radius: 8px 8px 0px 0px;
-        color: #263238;
+        @include MD {
+          background-color: transparent;
+        }
         .dropdown-menu,
         .dropdown-menu:hover,
         .dropdown-submenu:hover ul.dropdown-menu {
@@ -189,6 +198,9 @@ $extra-width: 1200px;
         }
         a.nav-link {
           color: #2576b9;
+          @include MD {
+            color: #ffd95c;
+          }
         }
       }
       &.dropdown {
@@ -201,11 +213,19 @@ $extra-width: 1200px;
           padding: 0;
           margin: 0;
           box-shadow: 0 8px 16px #00000026;
+          @include MD {
+            background-color: transparent;
+            box-shadow: none;
+          }
           .dropdown-item {
             font-weight: 500;
             padding-top: 14px;
             padding-bottom: 14px;
             border-radius: 10px;
+            @include MD {
+              color: #bcdaf2;
+              text-align: center;
+            }
             &:hover {
               color: #2576b9;
               background-color: #e3f0f9;
@@ -217,6 +237,45 @@ $extra-width: 1200px;
         }
       }
     }
+    &-mobile {
+      &.show {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #2576b9;
+        z-index: 100;
+      }
+      &-close {
+        position: absolute;
+        top: 24px;
+        right: 32px;
+        z-index: 10;
+        display: none;
+        @include LG {
+          display: block;
+        }
+      }
+      &.show &-close {
+        display: block;
+      }
+      @include LG {
+        .navbar-nav {
+          margin-top: 100px !important;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  &-right {
+    display: flex;
+    justify-content: center;
+  }
+  &-banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
   }
   &-login {
     @include FramesFont(20px, 28px, 700);
@@ -264,10 +323,18 @@ $extra-width: 1200px;
   }
   &-icons {
     &-meteor {
-      @include FramesPosition(auto, auto, -15%, 10%);
+      @include FramesPosition(auto, auto, -11%, 10%);
+      width: 75px;
+      img {
+        width: 100%;
+      }
     }
     &-star {
-      @include FramesPosition(auto, 10%, -15%, auto);
+      @include FramesPosition(auto, 10%, -11%, auto);
+      width: 75px;
+      img {
+        width: 100%;
+      }
     }
   }
   &-slick {
@@ -834,21 +901,37 @@ $extra-width: 1200px;
     &-trophy {
       width: 105px;
       left: 8%;
+      @include MD {
+        top: -4%;
+        z-index: -1;
+      }
     }
     &-jar {
       width: 75px;
       right: 6%;
       bottom: 23%;
+      @include MD {
+        bottom: 3%;
+        z-index: -1;
+      }
     }
     &-star1 {
       width: 21.53px;
       left: 12%;
       top: 30%;
+      @include MD {
+        top: 13%;
+        left: 10%;
+      }
     }
     &-star2 {
       width: 27.52px;
       top: 37%;
       right: 10%;
+      @include MD {
+        top: 0%;
+        right: 8%;
+      }
     }
   }
   &-wave {
