@@ -463,9 +463,11 @@ $extra-width: 1200px;
     padding: 5px 0;
     margin: 0 auto;
     margin-top: 48px;
+    scroll-behavior: smooth;
     overflow: scroll;
     @include MD {
       width: 95%;
+      padding: 5px 30%;
     }
     &::-webkit-scrollbar {
       width: 0px;

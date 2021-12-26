@@ -87,6 +87,12 @@ $(document).ready(function () {
   /* Custom JS */
   $(".ap-journey-tabs-item").click(function () {
     const currentIndex = $(".ap-journey-tabs-item").index(this);
+    const journeyTabs = document.querySelector(".ap-journey-tabs");
+    const journeyTabsItem = document.querySelector(
+      `.ap-journey-tabs-item:nth-child(${currentIndex})`
+    );
+    journeyTabs.scrollTo(journeyTabsItem?.offsetLeft - 70, 0);
+
     $(`.ap-journey-tabs-item`).removeClass("active");
     $(`.ap-journey-tabs-item:eq(${currentIndex})`).addClass("active");
     $(`.ap-journey-content-images`).removeClass("active");
