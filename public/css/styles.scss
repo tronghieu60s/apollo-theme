@@ -3,9 +3,12 @@ $font-primary: "Brauer NeueVN";
 $font-secondary: "Montserrat";
 
 $image-banner: "../images/common/banner-bg.svg";
+$image-footer: "../images/common/footer-bg.png";
+$image-footer-mobile: "../images/common/footer-bg-mobile.png";
 $image-line1: "../images/common/line-1.svg";
 $image-line2: "../images/common/line-2.svg";
 $image-line3: "../images/common/line-3.svg";
+$image-line3-mobile: "../images/common/line-3-mobile.svg";
 $image-wave1: "../images/common/wave-1.svg";
 $image-wave2: "../images/common/wave-2.svg";
 $image-wave3: "../images/common/wave-3.svg";
@@ -140,7 +143,8 @@ $extra-width: 1200px;
 }
 
 .ap-container {
-  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   font-family: $font-primary, sans-serif;
 }
 
@@ -251,7 +255,7 @@ $extra-width: 1200px;
     text-align: center;
     text-transform: uppercase;
     position: relative;
-    width: 65%;
+    width: 55%;
     color: #2576b9;
     margin: 0 auto;
     @include MD {
@@ -377,7 +381,7 @@ $extra-width: 1200px;
     @include FramesFont(48px, 54px, 700);
     text-align: center;
     text-transform: uppercase;
-    width: 65%;
+    width: 55%;
     color: #2576b9;
     margin: 0 auto;
     margin-top: 48px;
@@ -512,6 +516,7 @@ $extra-width: 1200px;
 }
 
 .ap-vision {
+  position: relative;
   width: 100%;
   margin-top: 110px;
   &-accordion {
@@ -856,70 +861,129 @@ $extra-width: 1200px;
 }
 
 .ap-footer {
+  @include FramesBackgroundImage($image-footer, cover, center);
+  width: 100%;
+  min-height: 1130px;
   position: relative;
+  padding-top: 100px;
   margin-top: 102px;
+  @include MD {
+    @include FramesBackgroundImage($image-footer-mobile, cover, 0% 0%);
+  }
   &-wave {
     @include FramesBackgroundImage($image-line3, contain);
-    @include FramesPosition(-62px, 0, 0, 15px);
-    width: 87%;
-    height: 565px;
-    transform: rotate(-4deg);
-  }
-  &-background {
-    width: 100%;
-    height: 100%;
-    img {
-      width: 100%;
+    top: -71px;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    position: absolute;
+    width: 98%;
+    height: 616px;
+    transform: rotate(3deg);
+    @include MD {
+      @include FramesBackgroundImage($image-line3-mobile, contain);
+      left: -7px;
+      width: 72%;
+      transform: rotate(2deg);
+    }
+    &-rocket {
+      position: absolute;
+      top: -26px;
+      right: -95px;
+      img {
+        width: 100%;
+      }
+    }
+    &-meteor {
+      width: 71px;
+      position: absolute;
+      left: 11%;
+      top: -9%;
+      img {
+        width: 100%;
+      }
+    }
+    &-star {
+      position: absolute;
+      left: 88%;
+      top: -9%;
+      width: 45px;
+      img {
+        width: 100%;
+      }
     }
   }
   &-stars {
     @include FramesPosition(-100px, auto, auto, 5%);
+    @include MD {
+      display: none;
+    }
     img {
       width: 100%;
     }
   }
   &-top {
-    position: absolute;
-    top: 0;
-    left: 50%;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(-50%);
+    flex-direction: column;
     &-badge {
+      width: 248px;
       position: absolute;
       display: flex;
       justify-content: center;
       align-items: center;
       top: 250px;
+      @include MD {
+        width: 157px;
+      }
+      & > img {
+        width: 100%;
+        z-index: 10;
+      }
       &-bg {
+        width: 170%;
         position: absolute;
-        z-index: -1;
+        left: -35%;
+        img {
+          width: 100%;
+        }
       }
       &-content {
-        position: absolute;
-
+        z-index: 20;
         &.top {
-          width: 250px;
+          width: 25%;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          top: 100px;
+          margin-top: 83px;
         }
         &.top &-title {
           text-align: center;
         }
         &.center {
-          width: 56%;
-          left: 23.5%;
-          top: 225px;
+          width: 50%;
+          margin-top: 35px;
+          margin-left: 91px;
+          @include LG {
+            width: 82%;
+            margin-left: 60px;
+          }
+          @include MD {
+            margin-left: 38px;
+          }
         }
         &.bottom {
-          width: 66%;
-          left: 16.5%;
-          top: 400px;
+          width: 57%;
+          margin-top: 58px;
+          margin-right: -20px;
+          @include LG {
+            width: 95%;
+            margin-right: 0;
+          }
         }
         &-double {
           display: flex;
@@ -929,6 +993,25 @@ $extra-width: 1200px;
             display: flex;
             justify-content: center;
             align-items: center;
+            &:first-child {
+              @include MD {
+                align-items: flex-end;
+              }
+            }
+            @include MD {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+          }
+        }
+        &-double &-title {
+          @include MD {
+            order: 2;
+          }
+        }
+        &-double &-icon {
+          @include MD {
+            order: 1;
           }
         }
         &-double div:first-child &-title {
@@ -944,7 +1027,201 @@ $extra-width: 1200px;
           @include FramesFont(20px, 28px, 700);
           letter-spacing: 0.15px;
           color: #fff;
+          @include MD {
+            font-size: 14px;
+            line-height: 19.6px;
+          }
         }
+      }
+    }
+  }
+  &-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &-box {
+      width: 65%;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 10px;
+      margin-top: 187px;
+      box-shadow: 8px 8px 0px 0px #607d8b80;
+      @include MD {
+        width: 90%;
+        justify-content: center;
+        .col-md-6 {
+          padding: 0;
+        }
+      }
+    }
+    &-left {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      background-image: url(../images/footer/ellipse.svg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 45px 0;
+      margin-right: 25px;
+      @include MD {
+        background-image: url(../images/footer/ellipse-mobile.svg);
+        padding: 60px 0;
+      }
+      &-title {
+        @include FramesBigTextShadow(#fff, #2576b9);
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        position: inherit;
+        z-index: 10;
+        span {
+          @include FramesBigTextShadow(#ffd95c, #2576b9);
+          display: block;
+        }
+      }
+      &-ellipse {
+        width: 424px;
+        height: 424px;
+        background-color: #ffd95c;
+        border-radius: 50%;
+        position: absolute;
+        top: -80%;
+        left: -5%;
+      }
+    }
+    &-right {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      @include MD {
+        padding: 26px 20px;
+        div {
+          display: block !important;
+        }
+      }
+      div {
+        display: flex;
+      }
+      &-input {
+        width: 98%;
+        border-width: 0;
+        border-bottom: 1px solid #607d8b;
+        margin-right: 8px;
+        @include MD {
+          margin-bottom: 24px;
+        }
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0.25px;
+          font-family: $font-secondary;
+        }
+      }
+      &-signIn {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #2576b9;
+        background-color: #ffd95c;
+        border: 0;
+        padding: 10px 0 3px 0;
+        border-radius: 40px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  &-bottom {
+    width: 65%;
+    border-top: 1px solid #eceff1;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    margin: auto;
+    margin-top: 40px;
+    @include MD {
+      width: 95%;
+    }
+    &-menu {
+      height: 100%;
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 0;
+      padding: 0;
+      @include MD {
+        flex-direction: column;
+        li {
+          margin-bottom: 16px;
+        }
+      }
+      li {
+        color: #fff;
+        margin-left: 24px;
+      }
+    }
+    &-logo {
+      width: 200px;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 4px;
+      margin-bottom: 16px;
+      @include MD {
+        margin: auto;
+        margin-top: 4px;
+        margin-bottom: 16px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    &-icon {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 4px;
+      @include MD {
+        justify-content: center;
+      }
+      i {
+        width: 24px;
+        height: 24px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-left: 8px;
+      }
+    }
+    &-copyright {
+      width: 55%;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 19.6px;
+      letter-spacing: 0.25px;
+      font-family: $font-secondary;
+      margin-top: 16px;
+      @include MD {
+        text-align: center;
+        margin: auto;
+        margin-top: 16px;
       }
     }
   }
