@@ -548,11 +548,168 @@ $extra-width: 1200px;
     }
     &-images {
       @include FramesVisibleHidden;
-      width: 90%;
+      width: 100%;
       margin: auto;
       margin-top: 25px;
-      img {
+      position: relative;
+      &-picture {
         width: 100%;
+      }
+      &.tab1 {
+        .star {
+          position: absolute;
+          top: -7%;
+          left: 61%;
+        }
+        .trophy {
+          position: absolute;
+          top: 18%;
+          right: 0;
+        }
+        .lightbulb {
+          position: absolute;
+          top: 0;
+          left: 3%;
+        }
+      }
+      &.tab2 {
+        .star {
+          position: absolute;
+          right: 7%;
+        }
+        .trophy {
+          position: absolute;
+          right: 1%;
+          bottom: 18%;
+        }
+        .lightbulb {
+          position: absolute;
+          top: 9%;
+          left: -6%;
+        }
+      }
+      &.tab3 {
+        .star {
+          position: absolute;
+          left: 0;
+          img {
+            transform: rotate(-95deg);
+          }
+        }
+        .trophy {
+          position: absolute;
+          top: 58%;
+          left: -10%;
+          img {
+            transform: scaleX(-1) rotate(18deg);
+          }
+        }
+        .lightbulb {
+          position: absolute;
+          right: 4%;
+          img {
+            transform: scaleX(-1) rotate(23deg);
+          }
+        }
+      }
+      &.tab4 {
+        .star {
+          position: absolute;
+          left: 0;
+          img {
+            transform: rotate(-95deg);
+          }
+        }
+        .trophy {
+          position: absolute;
+          top: 58%;
+          left: -10%;
+          img {
+            transform: scaleX(-1) rotate(18deg);
+          }
+        }
+        .lightbulb {
+          position: absolute;
+          right: 4%;
+          img {
+            transform: scaleX(-1) rotate(23deg);
+          }
+        }
+      }
+      &.tab5 {
+        .star {
+          position: absolute;
+          right: 15%;
+          img {
+            transform: rotate(-69deg);
+          }
+        }
+        .trophy {
+          position: absolute;
+          left: -10%;
+          bottom: 35%;
+          img {
+            transform: scaleX(-1) rotate(18deg);
+          }
+        }
+        .lightbulb {
+          position: absolute;
+          bottom: 9%;
+          right: -10%;
+          img {
+            transform: scaleX(-1);
+          }
+        }
+      }
+      &.tab6 {
+        .star {
+          position: absolute;
+          left: 5%;
+          img {
+            transform: rotate(-95deg);
+          }
+        }
+        .trophy {
+          position: absolute;
+          left: -8%;
+          bottom: 19%;
+          img {
+            transform: scaleX(-1) rotate(18deg);
+          }
+        }
+        .lightbulb {
+          position: absolute;
+          bottom: 29%;
+          right: -5%;
+          img {
+            transform: scaleX(-1) rotate(12deg);
+          }
+        }
+      }
+      &.tab7 {
+        .star {
+          position: absolute;
+          left: 5%;
+          img {
+            transform: rotate(-95deg);
+          }
+        }
+        .trophy {
+          position: absolute;
+          bottom: 29%;
+          right: -5%;
+          img {
+            transform: rotate(12deg);
+          }
+        }
+        .lightbulb {
+          position: absolute;
+          left: -12%;
+          bottom: 19%;
+          img {
+            transform: rotate(18deg);
+          }
+        }
       }
       &.active {
         @include FramesVisibleShow;
