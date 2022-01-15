@@ -551,7 +551,7 @@ $extra-width: 1200px;
       margin: auto;
       margin-top: 25px;
       position: relative;
-      &-picture {
+      .picture {
         width: 100%;
       }
       &.tab1 {
@@ -750,6 +750,7 @@ $extra-width: 1200px;
   }
   &-accordion {
     margin-top: 200px;
+    animation: fadeIn, slideInUp;
     @include MD {
       margin: 0 auto;
       margin-top: 60px;
@@ -820,6 +821,7 @@ $extra-width: 1200px;
       align-items: center;
       @include FramesVisibleHidden;
       margin: auto;
+      transform: scale(0.9);
       &.active {
         display: flex;
         opacity: 1;
@@ -1214,6 +1216,7 @@ $extra-width: 1200px;
         width: 208px;
         height: 208px;
         border-radius: 50%;
+        overflow: hidden;
         img {
           width: 100%;
           height: auto;
@@ -1227,14 +1230,39 @@ $extra-width: 1200px;
           left: 0;
           z-index: 5;
           border-radius: 100%;
-          border: 8px solid #2576b9;
-          border-top-color: #2576b9;
-          border-right-color: #2576b9;
-          border-bottom-color: #2576b9;
-          transition: border-top-color 0.15s linear,
-            border-right-color 0.15s linear 0.1s,
-            border-bottom-color 0.15s linear 0.2s;
+          border: 8px solid transparent;
+          animation: animation_teacher_image 2s forwards;
         }
+        @keyframes animation_teacher_image {
+          0% {
+            border-color: transparent;
+          }
+
+          25% {
+            border-top-color: #2576b9;
+          }
+
+          50% {
+            border-top-color: #2576b9;
+            border-right-color: #2576b9;
+          }
+
+          75% {
+            border-top-color: #2576b9;
+            border-right-color: #2576b9;
+            border-bottom-color: #2576b9;
+          }
+
+          100% {
+            border-top-color: #2576b9;
+            border-right-color: #2576b9;
+            border-bottom-color: #2576b9;
+            border-left-color: #2576b9;
+          }
+        }
+      }
+      &-info {
+        @include FramesFlex(center, center, column);
       }
       &-name {
         @include FramesFont(30px, 120%, 700);
