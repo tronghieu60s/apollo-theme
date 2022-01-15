@@ -5,7 +5,6 @@ $font-secondary: "Montserrat";
 $image-banner: "../images/common/banner-bg.svg";
 $image-footer: "../images/common/footer-bg.png";
 $image-footer-mobile: "../images/common/footer-bg-mobile.png";
-$image-line1: "../images/common/line-1.svg";
 $image-line2: "../images/common/line-2.svg";
 $image-line3: "../images/common/line-3.svg";
 $image-line3-mobile: "../images/common/line-3-mobile.svg";
@@ -745,6 +744,10 @@ $extra-width: 1200px;
   position: relative;
   width: 100%;
   margin-top: 110px;
+  &-container {
+    position: relative;
+    z-index: 30;
+  }
   &-accordion {
     margin-top: 200px;
     @include MD {
@@ -825,11 +828,181 @@ $extra-width: 1200px;
     }
   }
   &-wave {
-    @include FramesBackgroundImage($image-line1, contain);
     position: absolute;
     right: 0;
-    width: 92%;
+    width: 95%;
     height: 340px;
+    &-bg {
+      position: absolute;
+      top: -20%;
+      right: 100%;
+      width: 100%;
+      height: 500px;
+      background-color: #fff;
+      z-index: 10;
+      animation: animation_rocket_bg 2s linear;
+    }
+    &-line {
+      z-index: 20;
+      img {
+        width: 92%;
+        display: block;
+        margin-left: auto;
+      }
+    }
+    &-star1 {
+      position: absolute;
+      top: -3%;
+      right: 21%;
+      width: 2.4%;
+      z-index: 20;
+    }
+    &-star2 {
+      position: absolute;
+      top: 15%;
+      right: 83%;
+      width: 1.6%;
+      z-index: 20;
+    }
+    &-balloon {
+      position: absolute;
+      top: -6%;
+      right: 12%;
+      width: 8.5%;
+      z-index: 20;
+      animation: fadeIn, tada;
+    }
+    &-rocket {
+      position: absolute;
+      width: 10%;
+      top: -23%;
+      right: 91%;
+      transform: rotate(7deg);
+      z-index: 20;
+      animation: animation_rocket 2s linear;
+    }
+    @keyframes animation_rocket {
+      0% {
+        top: 23%;
+        right: 24px;
+        transform: rotate(8deg);
+      }
+
+      8% {
+        top: -2%;
+        right: 10%;
+        transform: rotate(0deg);
+      }
+
+      16% {
+        top: -8%;
+        right: 15%;
+        transform: rotate(-13deg);
+      }
+
+      24% {
+        top: -14%;
+        right: 20%;
+        transform: rotate(-19deg);
+      }
+
+      32% {
+        top: -18%;
+        right: 25%;
+        transform: rotate(-25deg);
+      }
+
+      40% {
+        top: -21%;
+        right: 30%;
+        transform: rotate(-30deg);
+      }
+
+      48% {
+        top: -18%;
+        right: 40%;
+        transform: rotate(-39deg);
+      }
+
+      58% {
+        top: -10%;
+        right: 50%;
+        transform: rotate(-48deg);
+      }
+
+      64% {
+        top: 2%;
+        right: 60%;
+        transform: rotate(-48deg);
+      }
+
+      72% {
+        top: 12%;
+        right: 70%;
+        transform: rotate(-41deg);
+      }
+
+      80% {
+        top: 9%;
+        right: 78%;
+        transform: rotate(-18deg);
+      }
+
+      100% {
+        top: -23%;
+        right: 91%;
+        transform: rotate(7deg);
+      }
+    }
+    @keyframes animation_rocket_bg {
+      0% {
+        right: 24px;
+      }
+
+      8% {
+        right: 10%;
+      }
+
+      16% {
+        right: 15%;
+      }
+
+      24% {
+        right: 20%;
+      }
+
+      32% {
+        right: 25%;
+      }
+
+      40% {
+        right: 30%;
+      }
+
+      48% {
+        right: 40%;
+      }
+
+      58% {
+        right: 50%;
+      }
+
+      64% {
+        right: 60%;
+      }
+
+      72% {
+        right: 70%;
+      }
+
+      80% {
+        right: 78%;
+      }
+
+      100% {
+        right: 91%;
+      }
+    }
   }
 }
 
