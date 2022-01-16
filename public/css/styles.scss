@@ -142,6 +142,7 @@ $extra-width: 1200px;
   max-width: 1920px;
   margin: 0 auto;
   font-family: $font-primary, sans-serif;
+  overflow: hidden;
 }
 
 .ap-header {
@@ -1595,7 +1596,7 @@ $extra-width: 1200px;
     }
   }
   &-wave {
-    @include FramesBackgroundImage("../images/infrastructure/line.svg", cover);
+    @include FramesBackgroundImage("../images/infrastructure/line.svg", contain, 50% 50%);
     position: absolute;
     right: 0;
     width: 100%;
@@ -1620,6 +1621,12 @@ $extra-width: 1200px;
       transition: all 0.3s ease-in-out;
       animation: animation_infrastructure_rocket 1.5s linear;
       z-index: 10;
+      @include MD {
+        width: 18.2%;
+        img {
+          width: 100%;
+        }
+      }
     }
     @keyframes animation_infrastructure_rocket {
       0% {
