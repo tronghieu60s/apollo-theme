@@ -5,9 +5,6 @@ $font-secondary: "Montserrat";
 $image-banner: "../images/common/banner-bg.svg";
 $image-footer: "../images/common/footer-bg.png";
 $image-footer-mobile: "../images/common/footer-bg-mobile.png";
-$image-line2: "../images/common/line-2.svg";
-$image-line3: "../images/common/line-3.svg";
-$image-line3-mobile: "../images/common/line-3-mobile.svg";
 $image-wave1: "../images/common/wave-1.svg";
 $image-wave2: "../images/common/wave-2.svg";
 $image-wave3: "../images/common/wave-3.svg";
@@ -1000,16 +997,6 @@ $extra-width: 1200px;
     right: 0;
     width: 95%;
     height: 340px;
-    &-bg {
-      position: absolute;
-      top: -20%;
-      right: 100%;
-      width: 100%;
-      height: 500px;
-      background-color: #fff;
-      z-index: 10;
-      animation: animation_rocket_bg 2s linear;
-    }
     &-line {
       z-index: 20;
       img {
@@ -1040,6 +1027,16 @@ $extra-width: 1200px;
       z-index: 20;
       animation: fadeIn, tada;
     }
+    &-bg {
+      position: absolute;
+      top: -20%;
+      right: 100%;
+      width: 100%;
+      height: 500px;
+      background-color: #fff;
+      z-index: 10;
+      animation: animation_vision_rocket_bg 2s linear;
+    }
     &-rocket {
       position: absolute;
       width: 10%;
@@ -1047,9 +1044,9 @@ $extra-width: 1200px;
       right: 91%;
       transform: rotate(7deg);
       z-index: 20;
-      animation: animation_rocket 2s linear;
+      animation: animation_vision_rocket 2s linear;
     }
-    @keyframes animation_rocket {
+    @keyframes animation_vision_rocket {
       0% {
         top: 23%;
         right: 24px;
@@ -1122,7 +1119,7 @@ $extra-width: 1200px;
         transform: rotate(7deg);
       }
     }
-    @keyframes animation_rocket_bg {
+    @keyframes animation_vision_rocket_bg {
       0% {
         right: 24px;
       }
@@ -1420,6 +1417,9 @@ $extra-width: 1200px;
         height: 80px;
       }
     }
+    .slick-slide.slick-current &-image {
+      border: 10px solid #2576b9;
+    }
     &-arrow {
       position: absolute;
       top: 50%;
@@ -1437,9 +1437,6 @@ $extra-width: 1200px;
   &-icons {
     &-icon {
       position: absolute;
-      img {
-        width: 100%;
-      }
     }
     &-trophy {
       width: 105px;
@@ -1447,6 +1444,19 @@ $extra-width: 1200px;
       @include MD {
         top: -4%;
         z-index: -1;
+      }
+      .trophy {
+        width: 100%;
+        animation-iteration-count: infinite;
+      }
+      .star1 {
+        position: absolute;
+        left: -25%;
+        top: 25%;
+      }
+      .star2 {
+        position: absolute;
+        left: -5%;
       }
     }
     &-jar {
@@ -1456,6 +1466,9 @@ $extra-width: 1200px;
       @include MD {
         bottom: 3%;
         z-index: -1;
+      }
+      .jar {
+        animation-iteration-count: infinite;
       }
     }
     &-star1 {
@@ -1478,11 +1491,329 @@ $extra-width: 1200px;
     }
   }
   &-wave {
-    @include FramesBackgroundImage($image-line2, cover);
+    @include FramesBackgroundImage("../images/infrastructure/line.svg", cover);
     position: absolute;
     right: 0;
     width: 100%;
-    height: 361.63px;
+    height: 388px;
+    overflow: hidden;
+    &-bg {
+      position: absolute;
+      top: -20%;
+      right: 100%;
+      width: 100%;
+      height: 500px;
+      background-color: #fff;
+      z-index: 10;
+      animation: animation_infrastructure_rocket_bg 1.5s linear;
+    }
+    &-rocket {
+      position: absolute;
+      width: 8.2%;
+      transform: rotate(185deg);
+      top: 77%;
+      left: 100%;
+      transition: all 0.3s ease-in-out;
+      animation: animation_infrastructure_rocket 1.5s linear;
+      z-index: 10;
+    }
+    @keyframes animation_infrastructure_rocket {
+      0% {
+        transform: rotate(193deg);
+        top: -11%;
+        left: -3%;
+      }
+
+      5% {
+        transform: rotate(181deg);
+        top: 17%;
+        left: 5%;
+      }
+
+      10% {
+        transform: rotate(178deg);
+        top: 29%;
+        left: 10%;
+      }
+
+      15% {
+        transform: rotate(160deg);
+        top: 38%;
+        left: 15%;
+      }
+
+      20% {
+        transform: rotate(143deg);
+        top: 40%;
+        left: 20%;
+      }
+
+      25% {
+        transform: rotate(122deg);
+        top: 35%;
+        left: 25%;
+      }
+
+      30% {
+        transform: rotate(116deg);
+        top: 26%;
+        left: 30%;
+      }
+
+      35% {
+        transform: rotate(128deg);
+        top: 16%;
+        left: 35%;
+      }
+
+      40% {
+        transform: rotate(175deg);
+        top: 23%;
+        left: 40%;
+      }
+
+      45% {
+        transform: rotate(187deg);
+        top: 35%;
+        left: 45%;
+      }
+
+      50% {
+        transform: rotate(183deg);
+        top: 50%;
+        left: 50%;
+      }
+
+      55% {
+        transform: rotate(179deg);
+        top: 63%;
+        left: 55%;
+      }
+
+      60% {
+        transform: rotate(173deg);
+        top: 74%;
+        left: 60%;
+      }
+
+      65% {
+        transform: rotate(140deg);
+        top: 79%;
+        left: 65%;
+      }
+
+      70% {
+        transform: rotate(114deg);
+        top: 72%;
+        left: 70%;
+      }
+
+      80% {
+        transform: rotate(45deg);
+        top: 46%;
+        left: 70%;
+      }
+
+      85% {
+        transform: rotate(105deg);
+        top: 21%;
+        left: 72%;
+      }
+
+      88% {
+        transform: rotate(169deg);
+        top: 26%;
+        left: 77%;
+      }
+
+      90% {
+        transform: rotate(178deg);
+        top: 37%;
+        left: 83%;
+      }
+
+      95% {
+        transform: rotate(181deg);
+        top: 52%;
+        left: 88%;
+      }
+
+      98% {
+        transform: rotate(182deg);
+        top: 61%;
+        left: 92%;
+      }
+
+      99% {
+        transform: rotate(180deg);
+        top: 67.5%;
+        left: 95%;
+      }
+
+      100% {
+        transform: rotate(183deg);
+        top: 71%;
+        left: 97%;
+      }
+    }
+    @keyframes animation_infrastructure_rocket_bg {
+      0% {
+        left: -3%;
+      }
+
+      5% {
+        left: 5%;
+      }
+
+      10% {
+        left: 10%;
+      }
+
+      15% {
+        left: 15%;
+      }
+
+      20% {
+        left: 20%;
+      }
+
+      25% {
+        left: 25%;
+      }
+
+      30% {
+        left: 30%;
+      }
+
+      35% {
+        left: 35%;
+      }
+
+      40% {
+        left: 40%;
+      }
+
+      45% {
+        left: 45%;
+      }
+
+      50% {
+        left: 50%;
+      }
+
+      55% {
+        left: 55%;
+      }
+
+      60% {
+        left: 60%;
+      }
+
+      65% {
+        left: 65%;
+      }
+
+      70% {
+        left: 70%;
+      }
+
+      80% {
+        left: 70%;
+      }
+
+      85% {
+        left: 72%;
+      }
+
+      88% {
+        left: 77%;
+      }
+
+      90% {
+        left: 83%;
+      }
+
+      95% {
+        left: 88%;
+      }
+
+      98% {
+        left: 92%;
+      }
+
+      99% {
+        left: 95%;
+      }
+
+      100% {
+        left: 97%;
+      }
+    }
+  }
+}
+
+.ap-message {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &-line {
+    width: 100%;
+  }
+  &-title {
+    @include FramesBigTextShadow(#2576b9, #ffd95c);
+    position: absolute;
+    font-size: 48px;
+    line-height: 1.25;
+    font-weight: 700;
+    max-width: 690px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &-icons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    &-trophy {
+      position: absolute;
+      top: 10%;
+      left: 20%;
+      .trophy {
+        transform: rotate(9deg);
+        animation-iteration-count: infinite;
+      }
+      .star1 {
+        position: absolute;
+        top: 7%;
+        left: -5%;
+      }
+      .star2 {
+        position: absolute;
+        top: 33%;
+        left: -20%;
+      }
+    }
+    &-jar {
+      position: absolute;
+      bottom: 5%;
+      left: 18%;
+      animation-iteration-count: infinite;
+    }
+    &-ballon {
+      position: absolute;
+      top: 8%;
+      right: 18%;
+      animation-iteration-count: infinite;
+    }
+    &-lightbulb {
+      position: absolute;
+      right: 17%;
+      bottom: 4%;
+      animation-iteration-count: infinite;
+    }
   }
 }
 
@@ -1492,12 +1823,16 @@ $extra-width: 1200px;
   min-height: 1130px;
   position: relative;
   padding-top: 100px;
-  margin-top: 102px;
+  margin-top: 160px;
   @include MD {
-    @include FramesBackgroundImage($image-footer-mobile, cover, 0% 0%);
+    @include FramesBackgroundImage(
+      "../images/footer/line-mobile.svg",
+      cover,
+      0% 0%
+    );
   }
   &-wave {
-    @include FramesBackgroundImage($image-line3, contain);
+    @include FramesBackgroundImage("../images/footer/line.svg", contain);
     top: -71px;
     right: 0;
     bottom: 0;
@@ -1507,7 +1842,10 @@ $extra-width: 1200px;
     height: 616px;
     transform: rotate(3deg);
     @include MD {
-      @include FramesBackgroundImage($image-line3-mobile, contain);
+      @include FramesBackgroundImage(
+        "../images/footer/line-3-mobile.svg",
+        contain
+      );
       left: -7px;
       width: 72%;
       transform: rotate(2deg);
