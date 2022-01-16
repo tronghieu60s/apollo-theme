@@ -716,22 +716,89 @@ $extra-width: 1200px;
     @include FramesBackgroundImage($image-wave2, cover, center);
     position: relative;
     width: 100%;
-    height: 144px;
-    img {
-      width: 100%;
-    }
     &-icon1 {
-      @include FramesPosition(-60%, auto, auto, -130px);
+      @include FramesPosition(-28%, auto, auto, -6%);
       &.mobile {
         width: 160px;
+        top: -53%;
         left: 0%;
+      }
+      .bg {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 58%;
+        background: #bcdaf2;
+        z-index: 20;
+        animation: animation_journey_butterfly_bg 0.7s linear forwards;
+      }
+      .butterfly {
+        position: absolute;
+        top: 46%;
+        right: 72%;
+        z-index: 30;
+        animation: animation_journey_butterfly 0.7s linear forwards;
+      }
+      .butterfly-line {
+        transform: rotate(4deg);
+      }
+      @keyframes animation_journey_butterfly {
+        0% {
+          top: 46%;
+          right: 72%;
+        }
+
+        50% {
+          top: 5%;
+          right: 30%;
+        }
+
+        100% {
+          top: -26%;
+          right: -27%;
+        }
+      }
+
+      @keyframes animation_journey_butterfly_bg {
+        0% {
+          right: 0;
+        }
+
+        100% {
+          right: -100%;
+        }
       }
     }
     &-icon2 {
-      @include FramesPosition(-5%, 5%, auto, auto);
+      @include FramesPosition(0, 0, auto, auto);
+      width: 300px;
+      height: 200px;
       &.mobile {
         width: 100px;
-        right: 6%;
+        top: -15%;
+        right: -1%;
+      }
+      .global {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        animation: animation_journey_global 0.7s linear forwards;
+      }
+      .global-star {
+        position: absolute;
+        top: -15%;
+        left: 22%;
+      }
+      @keyframes animation_journey_global {
+        0% {
+          top: 50%;
+          left: 50%;
+        }
+
+        100% {
+          top: 30%;
+          left: 0;
+        }
       }
     }
   }
@@ -1011,6 +1078,14 @@ $extra-width: 1200px;
       right: 21%;
       width: 2.4%;
       z-index: 20;
+      @include MD {
+        top: -3%;
+        right: 16%;
+        width: 5.4%;
+        img {
+          width: 100%;
+        }
+      }
     }
     &-star2 {
       position: absolute;
@@ -1018,6 +1093,14 @@ $extra-width: 1200px;
       right: 83%;
       width: 1.6%;
       z-index: 20;
+      @include MD {
+        top: -4%;
+        right: 78%;
+        width: 3.6%;
+        img {
+          width: 100%;
+        }
+      }
     }
     &-balloon {
       position: absolute;
@@ -1026,6 +1109,14 @@ $extra-width: 1200px;
       width: 8.5%;
       z-index: 20;
       animation: fadeIn, tada;
+      @include MD {
+        top: -6%;
+        right: 1%;
+        width: 17%;
+        img {
+          width: 100%;
+        }
+      }
     }
     &-bg {
       position: absolute;
@@ -1045,6 +1136,15 @@ $extra-width: 1200px;
       transform: rotate(7deg);
       z-index: 20;
       animation: animation_vision_rocket 2s linear;
+      @include MD {
+        width: 21%;
+        top: -22%;
+        right: 86%;
+        transform: rotate(23deg);
+        img {
+          width: 100%;
+        }
+      }
     }
     @keyframes animation_vision_rocket {
       0% {
@@ -1442,6 +1542,7 @@ $extra-width: 1200px;
       width: 105px;
       left: 8%;
       @include MD {
+        width: 73px;
         top: -4%;
         z-index: -1;
       }
@@ -1469,6 +1570,9 @@ $extra-width: 1200px;
       }
       .jar {
         animation-iteration-count: infinite;
+        @include MD {
+          width: 80%;
+        }
       }
     }
     &-star1 {
@@ -1758,6 +1862,9 @@ $extra-width: 1200px;
   justify-content: center;
   align-items: center;
   position: relative;
+  @include MD {
+    height: 500px;
+  }
   &-line {
     width: 100%;
   }
@@ -1767,9 +1874,12 @@ $extra-width: 1200px;
     font-size: 48px;
     line-height: 1.25;
     font-weight: 700;
-    max-width: 690px;
+    max-width: 40%;
     text-align: center;
     text-transform: uppercase;
+    @include MD {
+      max-width: 85%;
+    }
   }
   &-icons {
     position: absolute;
@@ -1781,6 +1891,10 @@ $extra-width: 1200px;
       position: absolute;
       top: 10%;
       left: 20%;
+      @include MD {
+        top: 8%;
+        left: 7%;
+      }
       .trophy {
         transform: rotate(9deg);
         animation-iteration-count: infinite;
@@ -1801,18 +1915,30 @@ $extra-width: 1200px;
       bottom: 5%;
       left: 18%;
       animation-iteration-count: infinite;
+      @include MD {
+        bottom: 12%;
+        left: 0%;
+      }
     }
     &-ballon {
       position: absolute;
       top: 8%;
       right: 18%;
       animation-iteration-count: infinite;
+      @include MD {
+        top: 2%;
+        right: 2%;
+      }
     }
     &-lightbulb {
       position: absolute;
       right: 17%;
       bottom: 4%;
       animation-iteration-count: infinite;
+      @include MD {
+        right: 4%;
+        bottom: 5%;
+      }
     }
   }
 }
@@ -1825,11 +1951,7 @@ $extra-width: 1200px;
   padding-top: 100px;
   margin-top: 160px;
   @include MD {
-    @include FramesBackgroundImage(
-      "../images/footer/line-mobile.svg",
-      cover,
-      0% 0%
-    );
+    @include FramesBackgroundImage($image-footer-mobile, cover, 0% 0%);
   }
   &-wave {
     @include FramesBackgroundImage("../images/footer/line.svg", contain);
@@ -1843,7 +1965,7 @@ $extra-width: 1200px;
     transform: rotate(3deg);
     @include MD {
       @include FramesBackgroundImage(
-        "../images/footer/line-3-mobile.svg",
+        "../images/footer/line-mobile.svg",
         contain
       );
       left: -7px;
